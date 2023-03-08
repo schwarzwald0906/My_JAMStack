@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ext .ts,.tsx api",
-    "lint:fix": "eslint --ext .ts,.tsx api --fix",
+    "lint": "eslint --ext .js,.jsx ./**/*",
+    "lint:fix": "eslint --ext .js,.jsx ./**/*",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "@typescript-eslint/parser": "^5.54.1",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
