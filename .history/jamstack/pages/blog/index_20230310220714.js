@@ -2,5 +2,9 @@ import React from 'react'
 import Hero from 'components/hero'
 
 export default function Home() {
-  return <Hero title="CUBE" subtitle="アウトプット" imageOn />
+  return (
+    <>
+      <Hero title="BLOG" subtitle="Recent Posts" />
+    </>
+  )
 }
