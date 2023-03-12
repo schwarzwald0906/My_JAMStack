@@ -1,0 +1,14 @@
+:root {
+  /* color */
+  --white: #fffffe;
+  --light-white: #f8f8f8;
+  --yellow: #e6cd8c;
+  --light-yellow: #e6cd8c;
+  --pink: #e4c6a6;
+  --light-pink: #e4c6a6;
+  --brown: #8e775d;
+  --light-gray: #ccc8c8;
+  --dark-gray: #707070;
+  --light-black: #222222;
+  --black: #000000;
+}
