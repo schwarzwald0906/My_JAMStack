@@ -1,0 +1,10 @@
+.hamburger {
+  width: 54px;
+  height: 56px;
+  background-color: #8e775d;
+  color: white; /* アイコンの色を白にする */
+  padding: 10px; /* アイコンを中央に揃える */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

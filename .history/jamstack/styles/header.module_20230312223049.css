@@ -1,0 +1,13 @@
+.header {
+  width: 1918px;
+  height: 80px;
+  padding: 0 0 0 31px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: rgba(228, 198, 166, 0.4);
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}

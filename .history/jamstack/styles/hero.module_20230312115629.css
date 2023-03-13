@@ -1,0 +1,21 @@
+.text {
+  /* padding-top: calc(var(--display) * 0.8);
+  padding-bottom: calc(var(--display) * 0.3); */
+
+  width: 1920px;
+  height: 980.8px;
+  padding: 464.3px 0 111.8px;
+  object-fit: contain;
+  opacity: 0.8;
+  border: solid 1px #707070;
+}
+
+.title {
+  font-size: var(--small-heading2);
+  color: var(--brown);
+}
+
+.subtitle {
+  font-size: var(--small-heading2);
+  color: var(--brown);
+}
