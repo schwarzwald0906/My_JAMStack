@@ -1,0 +1,15 @@
+.logo {
+  width: 440px;
+  height: 48px;
+  margin: 18px 17px 14px 0;
+  object-fit: contain;
+  font-family: Agenda;
+  font-size: 48px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8e775d;
+}
