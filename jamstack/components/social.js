@@ -10,18 +10,18 @@ import {
 
 export default function Social({ iconSize = 'initial' }) {
   return (
-    <div className={utilStyles.sideBySideCenter}>
+    <div className={utilStyles.center}>
       <ul className={styles.list} style={{ '--icon-size': iconSize }}>
         <li>
           <a href="https://www.instagram.com/gyo_fluxus/?hl=ja">
             <FontAwesomeIcon icon={faInstagram} />
-            <span className="sr-only">Instagram</span>
+            <span className="sr-only">Insta</span>
           </a>
         </li>
         <li>
           <a href="https://www.youtube.com/channel/UCgu-GRLA8aAkEirFmV-w8yA">
             <FontAwesomeIcon icon={faYoutube} />
-            <span className="sr-only">Youtube</span>
+            <span className="sr-only">Yout</span>
           </a>
         </li>
         <li>

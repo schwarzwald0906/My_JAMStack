@@ -9,20 +9,19 @@ import icon from 'images/icon.png'
 export default function Footer() {
   return (
     <footer className={styles.wrapper}>
-      <div className={utilStyles.sideBySideCenter}>
+      <div className={utilStyles.center}>
         <figure className={styles.image}>
           <Image
             src={icon}
-            alt=""
-            layout="responsive"
-            sizes="(min-width: 339px) 339px, (min-width: 339px) 50vw, 100vw"
-            priority
-            placeholder="blur"
+            alt="icon"
+            layout="fixed"
+            width={250}
+            height={250}
           />
         </figure>
-        <Container className={styles.flexContainer}>
+        <Container>
           <Contact />
-          <p>© 2022 FLUXUS_LOCUS</p>
+          <p>© 2022 FLUXUS LOCUS</p>
         </Container>
       </div>
     </footer>

@@ -1,5 +1,5 @@
 .wrapper {
-  padding: var(--space-lg) 0;
+  padding: var(--space-md) 0;
   background-color: var(--light-yellow);
 }
 
@@ -11,10 +11,4 @@
 /* image */
 .image {
   width: 40%;
-}
-
-@media (min-width: 339px) {
-  .image {
-    width: 40%;
-  }
 }

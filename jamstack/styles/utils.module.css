@@ -13,7 +13,7 @@
 
 @media (min-width: 768px) {
   .sideBySide {
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
   }
 }
@@ -29,4 +29,11 @@
   .sideBySideCenter {
     text-align: left;
   }
+}
+
+/* 単純（中央揃え） */
+.center {
+  composes: sideBySide;
+  align-items: center;
+  text-align: center;
 }
