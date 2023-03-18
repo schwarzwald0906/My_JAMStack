@@ -7,6 +7,8 @@
   .list {
     display: flex;
     gap: 2em;
+    align-items: center;
+    height: 80px;
   }
 }
 
@@ -19,7 +21,7 @@
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
     width: 54px;
-    height: 56px;
+    height: 65px;
     background-color: #8e775d;
     position: relative;
     z-index: 200;
