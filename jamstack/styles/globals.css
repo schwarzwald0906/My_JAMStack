@@ -3,9 +3,9 @@
   --white: #fffffe;
   --light-white: #f8f8f8;
   --yellow: #e6cd8c;
-  --light-yellow: #e6cd8c;
+  --light-yellow: rgba(230, 205, 140, 0.51);
   --pink: #e4c6a6;
-  --light-pink: #e4c6a6;
+  --light-pink: rgba(228, 198, 166, 0.4);
   --brown: #8e775d;
   --light-gray: #ccc8c8;
   --dark-gray: #707070;
@@ -56,7 +56,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   color: var(--brown);
   font-family: 'Noto Sans Kannada', sans-serif;
 }
