@@ -1,0 +1,14 @@
+.wrapper {
+  padding: var(--space-md) 0;
+  background-color: var(--light-yellow);
+}
+
+.flexContainer {
+  composes: sideBySideCenter from 'styles/utils.module.css';
+  gap: 2em;
+}
+
+/* image */
+.image {
+  width: 40%;
+}

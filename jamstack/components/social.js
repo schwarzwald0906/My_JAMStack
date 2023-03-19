@@ -1,33 +1,36 @@
 import styles from 'styles/social.module.css'
+import utilStyles from 'styles/utils.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faTwitter,
-  faFacebookF,
-  faGithub,
+  faInstagram,
+  faYoutube,
+  faLine,
 } from '@fortawesome/free-brands-svg-icons'
 
 export default function Social({ iconSize = 'initial' }) {
   return (
-    <ul className={styles.list} style={{ '--icon-size': iconSize }}>
-      <li>
-        <a href="https://twitter.com/">
-          <FontAwesomeIcon icon={faTwitter} />
-          <span className="sr-only">Twitter</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/">
-          <FontAwesomeIcon icon={faFacebookF} />
-          <span className="sr-only">Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/">
-          <FontAwesomeIcon icon={faGithub} />
-          <span className="sr-only">GitHub</span>
-        </a>
-      </li>
-    </ul>
+    <div className={utilStyles.center}>
+      <ul className={styles.list} style={{ '--icon-size': iconSize }}>
+        <li>
+          <a href="https://www.instagram.com/gyo_fluxus/?hl=ja">
+            <FontAwesomeIcon icon={faInstagram} />
+            <span className="sr-only">Insta</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCgu-GRLA8aAkEirFmV-w8yA">
+            <FontAwesomeIcon icon={faYoutube} />
+            <span className="sr-only">Yout</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://line.me/ti/p/SSyesj0DOk">
+            <FontAwesomeIcon icon={faLine} />
+            <span className="sr-only">Line</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   )
 }
