@@ -34,17 +34,17 @@ export default function Nav() {
       <ul className={styles.list}>
         <li>
           <Link legacyBehavior href="/">
-            <a onClick={closeNav}>Home</a>
+            <a onClick={closeNav}>ホーム</a>
           </Link>
         </li>
         <li>
           <Link legacyBehavior href="/about">
-            <a onClick={closeNav}>About</a>
+            <a onClick={closeNav}>FLUXUS LOCUSについて</a>
           </Link>
         </li>
         <li>
           <Link legacyBehavior href="/blog">
-            <a onClick={closeNav}>Blog</a>
+            <a onClick={closeNav}>ブログ</a>
           </Link>
         </li>
       </ul>

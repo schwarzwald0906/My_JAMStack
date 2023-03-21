@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from 'components/hero'
+import Hero from 'components/templates/hero'
 import Container from 'components/container'
 
 export default function Home() {
   return (
     <>
       <Container>
-        <Hero title="BLOG" subtitle="Recent Posts" />
+        <p>ブログ</p>
       </Container>
     </>
   )

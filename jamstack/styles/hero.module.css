@@ -1,22 +1,35 @@
-.component {
-  width: 1920px;
-  height: 980.8px;
-  padding: 464.3px 0 111.8px;
-  object-fit: contain;
-  opacity: 0.8;
-  border: solid 1px #707070;
+/* デスクトップ */
+@media (min-width: 768px) {
+  .hero {
+    /* background-image: url(images/hero.jpg); */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 748px;
+    height: 84px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    -webkit-text-stroke: 1px #707070;
+  }
 }
 
-.text {
-  /* padding-top: calc(var(--display) * 0.8);
-  padding-bottom: calc(var(--display) * 0.3); */
-
-  width: 1920px;
-  height: 980.8px;
-  padding: 464.3px 0 111.8px;
-  object-fit: contain;
-  opacity: 0.8;
-  /* border: solid 1px #707070; */
+/* モバイル */
+@media (max-width: 767px) {
+  .hero {
+    /* background-image: url(images/hero.jpg); */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 324px;
+    height: 81px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    -webkit-text-stroke: 1px #707070;
+  }
 }
 
 .title {
