@@ -1,0 +1,69 @@
+/* デスクトップ */
+@media (min-width: 768px) {
+  .hero {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 84px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    -webkit-text-stroke: 1px #707070;
+  }
+}
+
+/* モバイル */
+@media (max-width: 767px) {
+  .hero {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 81px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    -webkit-text-stroke: 1px #707070;
+  }
+}
+
+/* デスクトップ */
+@media (min-width: 768px) {
+  .rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 20px 75px;
+    background-color: rgba(255, 253, 253, 0.75);
+    color: #fff;
+  }
+}
+
+/* モバイル */
+@media (max-width: 767px) {
+  .rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(255, 253, 253, 0.75);
+    color: #fff;
+  }
+}
+
+.title {
+  font-size: var(--heading1);
+  color: var(--brown);
+  text-align: center;
+  font-family: 'Agenda-Thin';
+}
+
+.subtitle {
+  font-size: var(--small-heading2);
+  color: var(--brown);
+}

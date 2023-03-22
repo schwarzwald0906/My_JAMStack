@@ -47,6 +47,21 @@ export default function Nav() {
             <a onClick={closeNav}>ブログ</a>
           </Link>
         </li>
+        <li>
+          <Link legacyBehavior href="/plan">
+            <a onClick={closeNav}>プラン・料金</a>
+          </Link>
+        </li>
+        <li>
+          <Link legacyBehavior href="/access">
+            <a onClick={closeNav}>アクセス</a>
+          </Link>
+        </li>
+        <li>
+          <a onClick={closeNav} href="https://fluxus-locus.net/pcreserve.php">
+            WEB予約
+          </a>
+        </li>
       </ul>
     </nav>
   )

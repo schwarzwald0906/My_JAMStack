@@ -2,11 +2,11 @@ import React from 'react'
 import Hero from 'components/templates/hero'
 import Container from 'components/container'
 
-export default function Blog() {
+export default function Plan() {
   return (
     <>
       <Container>
-        <p>ブログ</p>
+        <p>プラン</p>
       </Container>
     </>
   )

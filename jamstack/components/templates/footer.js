@@ -1,7 +1,7 @@
 import styles from 'styles/footer.module.css'
 import utilStyles from 'styles/utils.module.css'
 import Image from 'next/image'
-import icon from 'images/icon.png'
+import icon from 'public/images/icon.png'
 import Container from 'components/container'
 import Contact from 'components/molecules/contact'
 

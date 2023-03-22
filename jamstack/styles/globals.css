@@ -67,6 +67,10 @@ h3 {
   font-size: var(--heading3);
 }
 
+p {
+  font-size: var(--small-heading3);
+}
+
 /* next/image */
 span > img {
   transition: 0.2s;

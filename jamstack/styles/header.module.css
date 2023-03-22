@@ -1,12 +1,10 @@
 .header {
   height: 80px;
-  background-color: var(--light-pink);
+  background-color: var(--white);
 }
 .headerContainer {
   display: flex;
   justify-content: space-between;
-  /* align-items: center;
-  height: 100%; */
   align-items: flex-start;
   height: 80%;
 }

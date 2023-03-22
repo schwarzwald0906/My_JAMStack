@@ -1,20 +1,34 @@
 import Container from 'components/container'
 import AboutCard from 'components/oraganism/aboutCard'
 import PostBody from 'components/post-body'
-import Hero from 'components/templates/hero'
-import about1 from 'images/about1.jpg'
+import about1 from 'public/images/about1.jpg'
+import aboutEyeCatch from 'public/images/aboutEyeCatch.jpg'
 import utilStyles from 'styles/utils.module.css'
+import styles from 'styles/about.module.css'
+import Image from 'next/image'
 
 export default function About() {
   return (
     <>
-      <Hero
-        title="Vision"
-        subtitle="「真の健康」を取り戻し、100歳まで動ける身体へ"
-        imageOn
-      />
-
       <div style={{ backgroundColor: 'var(--light-pink)' }}>
+        <figure className={styles.figure}>
+          <Image
+            className={styles.image}
+            src={aboutEyeCatch}
+            alt=""
+            layout="responsive"
+            objectPosition="top"
+            objectFit="cover"
+          />
+        </figure>
+        <div className={styles.hero}>
+          <div className={styles.rectangle}>
+            <p className={styles.title}>Vision</p>
+            <p className={styles.subtitle}>
+              {['根本治療で、100年先まで動ける体へ']}
+            </p>
+          </div>
+        </div>
         <Container>
           <br />
           <h2 className={utilStyles.center}>創業ストーリー</h2>
