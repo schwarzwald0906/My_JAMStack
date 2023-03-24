@@ -1,11 +1,12 @@
 import Container from 'components/container'
 import AboutCard from 'components/oraganism/aboutCard'
 import PostBody from 'components/post-body'
-import about1 from 'public/images/about1.jpg'
-import aboutEyeCatch from 'public/images/aboutEyeCatch.jpg'
 import utilStyles from 'styles/utils.module.css'
 import styles from 'styles/about.module.css'
 import Image from 'next/image'
+
+import about1 from 'public/images/about1.jpg'
+import aboutEyeCatch from 'public/images/aboutEyeCatch.jpg'
 
 export default function About() {
   return (
@@ -13,7 +14,6 @@ export default function About() {
       <div style={{ backgroundColor: 'var(--light-pink)' }}>
         <figure className={styles.figure}>
           <Image
-            className={styles.image}
             src={aboutEyeCatch}
             alt=""
             layout="responsive"

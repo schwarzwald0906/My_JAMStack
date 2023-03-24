@@ -3,13 +3,13 @@ import Container from 'components/container'
 import Image from 'next/image'
 import homeEyeCatch from 'public/images/homeEyeCatch.jpg'
 import styles from 'styles/index.module.css'
+import SlideShow from 'components/molecules/slideShow'
 
 export default function Home() {
   return (
     <>
       <figure className={styles.figure}>
         <Image
-          className={styles.image}
           src={homeEyeCatch}
           alt=""
           layout="responsive"
@@ -32,9 +32,19 @@ export default function Home() {
           <p className={styles.name}>理学療法士　行之内真人</p>
         </div>
       </div>
+
       <Container>
         <p>ホーム</p>
       </Container>
+      <div style={{ backgroundColor: 'var(--light-pink)' }}>
+        <Container>
+          <div>
+            <h3>FLUXUS LOCUSで人生が変わった人たち</h3>
+            <SlideShow />
+            <br />
+          </div>
+        </Container>
+      </div>
     </>
   )
 }
