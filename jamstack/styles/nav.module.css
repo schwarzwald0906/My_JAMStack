@@ -9,6 +9,8 @@
     gap: 2em;
     align-items: center;
     height: 80px;
+    font-family: 'Agenda';
+    color: var(--brown);
   }
 }
 
@@ -89,7 +91,8 @@
     display: grid;
     gap: 40px;
     place-content: center;
-    text-align: center;
+    text-align: left;
+    font-family: 'Agenda';
   }
 }
 

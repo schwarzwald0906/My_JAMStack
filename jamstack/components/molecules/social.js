@@ -15,13 +15,13 @@ export default function Social({ iconSize = 'initial' }) {
         <li>
           <a href="https://www.instagram.com/gyo_fluxus/?hl=ja">
             <FontAwesomeIcon icon={faInstagram} />
-            <span className="sr-only">Insta</span>
+            <span className="sr-only">Instagram</span>
           </a>
         </li>
         <li>
           <a href="https://www.youtube.com/channel/UCgu-GRLA8aAkEirFmV-w8yA">
             <FontAwesomeIcon icon={faYoutube} />
-            <span className="sr-only">Yout</span>
+            <span className="sr-only">Youtube</span>
           </a>
         </li>
         <li>

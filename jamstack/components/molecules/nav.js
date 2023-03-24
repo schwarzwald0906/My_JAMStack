@@ -34,18 +34,33 @@ export default function Nav() {
       <ul className={styles.list}>
         <li>
           <Link legacyBehavior href="/">
-            <a onClick={closeNav}>Home</a>
+            <a onClick={closeNav}>ホーム</a>
           </Link>
         </li>
         <li>
           <Link legacyBehavior href="/about">
-            <a onClick={closeNav}>About</a>
+            <a onClick={closeNav}>FLUXUS LOCUSについて</a>
           </Link>
         </li>
         <li>
           <Link legacyBehavior href="/blog">
-            <a onClick={closeNav}>Blog</a>
+            <a onClick={closeNav}>ブログ</a>
           </Link>
+        </li>
+        <li>
+          <Link legacyBehavior href="/plan">
+            <a onClick={closeNav}>プラン・料金</a>
+          </Link>
+        </li>
+        <li>
+          <Link legacyBehavior href="/access">
+            <a onClick={closeNav}>アクセス</a>
+          </Link>
+        </li>
+        <li>
+          <a onClick={closeNav} href="https://fluxus-locus.net/pcreserve.php">
+            WEB予約
+          </a>
         </li>
       </ul>
     </nav>

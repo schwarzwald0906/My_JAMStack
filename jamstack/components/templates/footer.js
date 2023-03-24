@@ -1,10 +1,9 @@
-import Container from './container'
 import styles from 'styles/footer.module.css'
-// import './styles/utils.module.css'
 import utilStyles from 'styles/utils.module.css'
-import Contact from './contact'
 import Image from 'next/image'
-import icon from 'images/icon.png'
+import icon from 'public/images/icon.png'
+import Container from 'components/container'
+import Contact from 'components/molecules/contact'
 
 export default function Footer() {
   return (
@@ -15,13 +14,13 @@ export default function Footer() {
             src={icon}
             alt="icon"
             layout="fixed"
-            width={250}
-            height={250}
+            width={150}
+            height={150}
           />
         </figure>
         <Container>
           <Contact />
-          <p>© 2022 FLUXUS LOCUS</p>
+          <p style={{ fontFamily: 'Agenda' }}>© 2023 FLUXUS LOCUS</p>
         </Container>
       </div>
     </footer>

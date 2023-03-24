@@ -1,27 +1,68 @@
 import Container from 'components/container'
-import Hero from 'components/hero'
+import AboutCard from 'components/oraganism/aboutCard'
 import PostBody from 'components/post-body'
+import utilStyles from 'styles/utils.module.css'
+import styles from 'styles/about.module.css'
+import Image from 'next/image'
+
+import about1 from 'public/images/about1.jpg'
+import aboutEyeCatch from 'public/images/aboutEyeCatch.jpg'
 
 export default function About() {
   return (
-    <Container>
-      <Hero title="About" subtitle="About development activities" />
-      <PostBody>
-        <p>
-          Cubeが得意とする分野はモノづくりです。3次元から2次元の造形、プログラミングやデザインなど、さまざまな技術を組み合わせることによって社会や環境と結びつけるクリエイティブを提案し続けています。
-        </p>
-        <h2>モノづくりで目指していること</h2>
-        <p>
-          モノづくりではデータの解析からクリエイティブまで幅広いことを担当しています。新しいことを取り入れながら、ユーザーにマッチした提案を実現するのが目標です。たくさんの開発・提供が数多くありますが、特にそこを磨く作業に力を入れています。
-        </p>
-        <p>
-          単純に形にするだけでなく、作る過程や、なぜそのようにしたのかを大事にしながらものづくりをしています。毎回課題解決テーマをもって「モノ」と向き合い制作をし、フィードバックしてもらうことで自分の中にあるモヤモヤを言葉にして「問い」への答えを出しています。
-        </p>
-        <h3>新しいことへのチャレンジ</h3>
-        <p>
-          今までと違うものを作ることで愛着が湧いてきます。そこで興味を持ったことは小さなことでもいいから取り入れて、良いものを作れるようにしています。小さなヒントから新しいものを生み出すようなモノづくりは、これからも続けていきたいです。
-        </p>
-      </PostBody>
-    </Container>
+    <>
+      <div style={{ backgroundColor: 'var(--light-pink)' }}>
+        <figure className={styles.figure}>
+          <Image
+            src={aboutEyeCatch}
+            alt=""
+            layout="responsive"
+            objectPosition="top"
+            objectFit="cover"
+          />
+        </figure>
+        <div className={styles.hero}>
+          <div className={styles.rectangle}>
+            <p className={styles.title}>Vision</p>
+            <p className={styles.subtitle}>
+              {['根本治療で、100年先まで動ける体へ']}
+            </p>
+          </div>
+        </div>
+        <Container>
+          <br />
+          <h2 className={utilStyles.center}>創業ストーリー</h2>
+          <PostBody>
+            <AboutCard
+              imageSrc={about1}
+              imageAlt="about1"
+              title="幼少期"
+              content="私は小学校3年のころからバスケを始め、靭帯損傷、腰痛を始め、数多くのスポーツ障害を抱えた友人を多く目の辺りにしてきました。私自身も、中学校の頃は膝と腰を痛め、5年以上接骨院や整形外科に通い続け、痛みを緩和しては運動してすぐに痛くなる状態を繰り返していました。努力をしているのに痛みやケガのために報われない。痛みやケガを治そうとしているのに治らず同じことを繰り返す。そのような友人・自分自身を見続けた結果、治そう・良くなろうと努力をし続ける人を手伝える自分になりたいと思い理学療法士を目指すこととなりました。"
+            />
+            <AboutCard
+              imageSrc={about1}
+              imageAlt="about1"
+              title="リハビリ病院で働く"
+              content=" 理学療法士となりリハビリの専門病院で働き始めました。しかし、医療の世界で分かったのは「同じ治療・リハビリをしても効果が出る人と効果が出ない人に分かれてしまい、人によっては同じ苦しみを持ち続ける」ことでした。同じ薬・同じ手術・同じマッサージ・同じ筋トレをして二週間で痛みが無くなる人もいれば、一年経っても痛いままの人もいる。自分が受けてきた、5年以上治療してもすぐに元に戻ってしまうような気休め的な治療が非常に多いことを目の当たりにし続けました。
+                このままでは苦しんでいる人の役に立てる自分にはなれない。一人一人の問題解決をする知識が必要だと感じました。"
+            />
+            <AboutCard
+              imageSrc={about1}
+              imageAlt="about1"
+              title="試行錯誤"
+              content="個別の問題に近づくため、「個性・体質」と呼ばれるような身体の構造をもっと細かく把握するための身体を触る技術を徹底的に磨きました。そうすると、一人一人、身体の深部で使えている筋肉が違うことに気づきました。見た目は同じように動いているのに、骨の付近まで触らないと分からない、深い筋肉の使い方の違いがあると。
+                そして、O脚で5年以上リハビリをしていて手術を勧められている方に、分析の結果股関節の最も深くにある筋肉が使えていないと判断しそこを鍛える方法を試したら、「体重をかけても痛くないです！こんな運動初めてしました！」と衝撃的な感想をいただきました。。"
+            />
+            <AboutCard
+              imageSrc={about1}
+              imageAlt="about1"
+              title="開業前"
+              content="私は小学校3年のころからバスケを始め、靭帯損傷、腰痛を始め、数多くのスポーツ障害を抱えた友人を多く目の辺りにしてきました。私自身も、中学校の頃は膝と腰を痛め、5年以上接骨院や整形外科に通い続け、痛みを緩和しては運動してすぐに痛くなる状態を繰り返していました。努力をしているのに痛みやケガのために報われない。痛みやケガを治そうとしているのに治らず同じことを繰り返す。そのような友人・自分自身を見続けた結果、治そう・良くなろうと努力をし続ける人を手伝える自分になりたいと思い理学療法士を目指すこととなりました。"
+            />
+          </PostBody>
+          <br />
+        </Container>
+      </div>
+    </>
   )
 }

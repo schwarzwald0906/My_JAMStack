@@ -1,11 +1,11 @@
 import React from 'react'
 import Container from 'components/container'
 
-export default function Blog() {
+export default function Access() {
   return (
     <>
       <Container>
-        <p>ブログ</p>
+        <p>アクセス</p>
       </Container>
     </>
   )
