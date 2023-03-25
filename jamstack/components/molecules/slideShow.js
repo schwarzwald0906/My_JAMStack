@@ -15,7 +15,7 @@ export default function SlideShow() {
       infiniteLoop
       showStatus={false}
       showThumbs={false}
-      style={{ width: '416px', height: '416px' }}
+      style={{ width: '333px', height: '333px' }}
     >
       {images.map((image, index) => (
         <div key={index}>

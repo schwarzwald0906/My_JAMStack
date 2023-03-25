@@ -1,6 +1,6 @@
 import Container from 'components/container'
-import Logo from 'components/molecules/logo'
-import Nav from 'components/molecules/nav'
+import Logo from 'components/atom/logo'
+import Nav from 'components/atom/nav'
 import styles from 'styles/header.module.css'
 
 export default function Header() {

@@ -2,9 +2,11 @@
   width: 92%;
   max-width: 1152px;
   margin: 0 auto;
+  padding: 15px 0px 15px 0px;
 }
 
 .large {
   composes: default;
   max-width: 1280px;
+  padding: 15px 0px 15px 0px;
 }
