@@ -4,7 +4,6 @@ export default function Square({ digit }) {
   const isMobile = window.innerWidth < 768
   const size = isMobile ? 26 : 35
   const overlap = isMobile ? 5 : 7
-  // ={styles.figure}
   return (
     <div
       className={styles.squareContainer}
