@@ -8,7 +8,7 @@ export default function Title({ digit, msg }) {
       <h4
         style={{
           marginLeft: '14px',
-          marginTop: '5px',
+          marginTop: '3px',
           //   fontSize: '15px',
         }}
       >

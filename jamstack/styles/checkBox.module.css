@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  flex-direction: row; /* 横一列に並べる */
 }
 .item {
   margin: 0 5px; /* アイテム間の余白 */

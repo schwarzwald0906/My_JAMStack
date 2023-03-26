@@ -4,12 +4,7 @@ import Image from 'next/image'
 import homeEyeCatch from 'public/images/homeEyeCatch.jpg'
 import styles from 'styles/index.module.css'
 import SlideShow from 'components/molecules/slideShow'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareCheck } from '@fortawesome/free-solid-svg-icons'
-import utilsStyles from 'styles/utils.module.css'
 import CheckBox from 'components/molecules/checkBox'
-import PostBody from 'components/post-body'
-import Square from 'components/molecules/square'
 import Title from 'components/molecules/title'
 export default function Home() {
   return (
@@ -41,7 +36,9 @@ export default function Home() {
 
       <div style={{ backgroundColor: 'var(--light-pink)' }}>
         <Container>
-          <h4>　　◎このようなお悩みはありませんか？</h4>
+          <h4 style={{ textAlign: 'center' }}>
+            ◎このようなお悩みはありませんか？
+          </h4>
           <CheckBox msg="肩こり, 腰痛がどこに行っても良くならない" />
           <CheckBox msg="痛み止めやその場しのぎのマッサージはもう嫌だ" />
           <CheckBox msg="痛み・しびれから歩くのも生活するのもつらい" />
@@ -63,7 +60,41 @@ export default function Home() {
             ]}
           </h4>
           <Title digit={1} msg="他院では痛みが完治しなかったお客様" />
+          <p>
+            {[
+              'そもそも痛みは、なぜ発生するのでしょうか？',
+              <br />,
+              '多くの場合、それは神経系やインナーマッスルの不調に由来しています。',
+              <br />,
+              <br />,
+              'しかし、神経系へのアプローチには、高度で精密な技術を要するため、他院では、身体の歪みを取り除くだけで手一杯です。',
+              <br />,
+              'ただ、それでは、根本からの改善は望めません。',
+              <br />,
+              '当院では、入念な触診により、神経系やインナーマッスルにアプローチし、痛み・不調をその原因から取り除きます。',
+            ]}
+          </p>
           <Title digit={2} msg="身体のパフォーマンスを向上させたいお客様" />
+          <p>
+            {[
+              'あなたは、身体の筋肉の何割を「使えて」いますか？',
+              <br />,
+              'アウターマッスルが200種あるのに対し、',
+              <br />,
+              'インナーマッスルは、なんと202種',
+              <br />,
+              <br />,
+              'しかし世の中にアウターマッスルの鍛え方を解説する本や動画は数あれど、',
+              'インナーマッスルを正しく鍛えるトレーニングはほとんどありません。',
+              <br />,
+              '多くの人が、インナーマッスルをほぼ全く使えないまま生活しています。',
+              <br />,
+              <br />,
+              'その結果、腰痛や鞭打ちなどの身体の歪みを誘発します。',
+              <br />,
+              '当院では独自のアプローチで、ゆがみがもう二度と出ない身体を獲得します。',
+            ]}
+          </p>
         </Container>
       </div>
 

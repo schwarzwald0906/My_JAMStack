@@ -1,63 +1,18 @@
-import React from 'react'
+import styles from 'styles/square.module.css'
 
-const Square = ({ digit }) => {
-  const size = 26
-  const overlap = 9
-
+export default function Square({ digit }) {
+  const isMobile = window.innerWidth < 768
+  const size = isMobile ? 26 : 35
+  const overlap = isMobile ? 5 : 7
+  // ={styles.figure}
   return (
-    <div style={{ position: 'relative', width: size, height: size }}>
-      <div
-        style={{
-          position: 'absolute',
-          top: overlap,
-          left: overlap,
-          width: size,
-          height: size,
-          backgroundColor: 'var(--brown)',
-          zIndex: 1,
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: size,
-          height: size,
-          backgroundColor: 'white',
-          zIndex: 2,
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          top: overlap,
-          left: overlap,
-          width: size - overlap,
-          height: size - overlap,
-          backgroundColor: 'white',
-          zIndex: 3,
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '100%',
-            height: '100%',
-            fontSize: size - overlap + 3,
-            fontWeight: 'bold',
-            color: 'var(--brown)',
-            fontFamily: 'Agenda-Thin',
-            textAlign: 'center',
-          }}
-        >
-          {digit}
-        </div>
-      </div>
+    <div
+      className={styles.squareContainer}
+      style={{ '--size': `${size}px`, '--overlap': `${overlap}px` }}
+    >
+      <div className={styles.squareBackground} />
+      <div className={styles.squareOverlay} />
+      <div className={styles.squareText}>{digit}</div>
     </div>
   )
 }
-
-export default Square

@@ -1,9 +1,41 @@
-.container {
-  display: flex;
-  flex-direction: row; /* 横一列に並べる */
+.squareContainer {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
 }
-.item {
-  margin: 0 5px; /* アイテム間の余白 */
+
+.squareBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--white);
+  border: 1px solid var(--brown);
+  z-index: 2;
+}
+
+.squareOverlay {
+  position: absolute;
+  top: var(--overlap);
+  left: var(--overlap);
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--brown);
+  z-index: 1;
+}
+
+.squareText {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: var(--small-heading2);
   color: var(--brown);
-  size: xs;
+  font-weight: normal;
+  font-family: 'Noto Sans Kannada-Thin';
+  text-align: center;
+  z-index: 3;
 }
