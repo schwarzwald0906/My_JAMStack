@@ -1,7 +1,16 @@
+import { useEffect, useState } from 'react'
 import styles from 'styles/square.module.css'
 
 export default function Square({ digit }) {
-  const isMobile = window.innerWidth < 768
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768)
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   const size = isMobile ? 26 : 35
   const overlap = isMobile ? 5 : 7
   return (

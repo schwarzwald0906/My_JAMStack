@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from 'components/container'
 import Image from 'next/image'
-import homeEyeCatch from 'public/images/homeEyeCatch.jpg'
+import homeEyeCatch from 'public/images/toppage/home-eyecatch.jpg'
 import styles from 'styles/index.module.css'
 import SlideShow from 'components/molecules/slideShow'
 import CheckBox from 'components/molecules/checkBox'
@@ -16,6 +16,7 @@ export default function Home() {
           layout="responsive"
           objectPosition="top"
           objectFit="cover"
+          priority
         />
       </figure>
       <div className={styles.hero}>

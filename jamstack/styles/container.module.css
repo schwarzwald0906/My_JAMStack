@@ -8,5 +8,5 @@
 .large {
   composes: default;
   max-width: 1280px;
-  padding: 15px 0px 15px 0px;
+  padding: 0px 0px 0px 0px;
 }

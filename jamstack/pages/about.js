@@ -5,8 +5,8 @@ import utilStyles from 'styles/utils.module.css'
 import styles from 'styles/about.module.css'
 import Image from 'next/image'
 
-import about1 from 'public/images/about1.jpg'
-import aboutEyeCatch from 'public/images/aboutEyeCatch.jpg'
+import about1 from 'public/images/about/about1.jpg'
+import aboutEyeCatch from 'public/images/about/about-eyecatch.jpg'
 
 export default function About() {
   return (
@@ -19,6 +19,7 @@ export default function About() {
             layout="responsive"
             objectPosition="top"
             objectFit="cover"
+            priority
           />
         </figure>
         <div className={styles.hero}>
