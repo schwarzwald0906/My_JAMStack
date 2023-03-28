@@ -2,10 +2,10 @@ import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 const images = [
-  '/images/topPage/customer.png',
-  '/images/topPage/customer1.png',
-  '/images/topPage/customer2.png',
-  '/images/topPage/customer3.png',
+  '/images/topPage/customer1.jpg',
+  '/images/topPage/customer2.jpg',
+  '/images/topPage/customer3.jpg',
+  '/images/topPage/customer4.jpg',
 ]
 
 export default function SlideShow() {

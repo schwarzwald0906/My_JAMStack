@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Container large>
-        <div class={styles.headerContainer}>
+        <div className={styles.headerContainer}>
           <Logo />
           <Nav />
         </div>

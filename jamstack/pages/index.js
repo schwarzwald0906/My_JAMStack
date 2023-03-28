@@ -1,11 +1,20 @@
-import React from 'react'
+// import React from 'react'
 import Container from 'components/container'
 import Image from 'next/image'
-import homeEyeCatch from 'public/images/toppage/home-eyecatch.jpg'
 import styles from 'styles/index.module.css'
 import SlideShow from 'components/molecules/slideShow'
 import CheckBox from 'components/molecules/checkBox'
 import Title from 'components/molecules/title'
+import PostBody from 'components/post-body'
+import AboutCard from 'components/oraganism/aboutCard'
+import utilStyles from 'styles/utils.module.css'
+
+import homeEyeCatch from 'public/images/toppage/home-eyecatch.jpg'
+import cureStep2 from 'public/images/toppage/cure-step2.png'
+import cureStep3 from 'public/images/toppage/cure-step3.png'
+import cureStep4 from 'public/images/toppage/cure-step4.png'
+import cureStep5 from 'public/images/toppage/cure-step5.png'
+
 export default function Home() {
   return (
     <>
@@ -37,9 +46,9 @@ export default function Home() {
 
       <div style={{ backgroundColor: 'var(--light-pink)' }}>
         <Container>
-          <h4 style={{ textAlign: 'center' }}>
-            ◎このようなお悩みはありませんか？
-          </h4>
+          <h3 className={utilStyles.center}>
+            このようなお悩みはありませんか？
+          </h3>
           <CheckBox msg="肩こり, 腰痛がどこに行っても良くならない" />
           <CheckBox msg="痛み止めやその場しのぎのマッサージはもう嫌だ" />
           <CheckBox msg="痛み・しびれから歩くのも生活するのもつらい" />
@@ -51,7 +60,7 @@ export default function Home() {
       </div>
       <div style={{ backgroundColor: 'var(--light-gray)' }}>
         <Container>
-          <h4>
+          <h4 style={{ color: 'var(--black)' }}>
             {[
               '当院では、アメリカの整体医学を取り入れ',
               <br />,
@@ -102,9 +111,55 @@ export default function Home() {
       <div style={{ backgroundColor: 'var(--light-pink)' }}>
         <Container>
           <div>
-            <h3>FLUXUS LOCUSで人生が変わったお客様</h3>
+            <h3 className={utilStyles.center}>
+              FLUXUS LOCUSで人生が変わったお客様
+            </h3>
             <SlideShow />
           </div>
+        </Container>
+      </div>
+      <div style={{ backgroundColor: 'var(--light-gray)' }}>
+        <Container>
+          <h3 className={utilStyles.center}>施術の流れ</h3>
+          <PostBody>
+            <AboutCard
+              imageSrc={cureStep2}
+              imageAlt="cureStep2"
+              title="カウンセリング"
+              content="生活習慣や現在に至るまで身体に
+              積み重なったダメージなどから、身体の不調の発生原因を分析
+              します。他院ではここまで細かく聞かれたことが無いと驚かれ
+              ます。"
+            />
+            <AboutCard
+              imageSrc={cureStep3}
+              imageAlt="cureStep3"
+              title="触診"
+              content="身体の不調が生じている部位や発生原因と考えられる部位を、血管や神経まで 身体の最深部まで触診して、異常を発している部位を特定します。 "
+            />
+            <AboutCard
+              imageSrc={cureStep4}
+              imageAlt="cureStep4"
+              title="施術"
+              content="ゆがみの原因部位を調整し、痛みや不調を改善します。その場で変化や効果を実感していただけます。"
+            />
+            <AboutCard
+              imageSrc={cureStep5}
+              imageAlt="cureStep5"
+              title="今後の説明（希望者のみ）"
+              content="身体に起きている問題を解決するためには他にどこのアプローチが 必要か、どのくらい期間がかかるかの計画を希望者にのみ説明します。 "
+            />
+            <h3 className={utilStyles.center}>ご予約はこちらから</h3>
+            <h4>
+              {[
+                'リンク先からWEB予約をお願いします。',
+                <br />,
+                '予約後、仮予約のメールを折り返し送ります。',
+                <br />,
+                'その後、こちらで日程を確認し、本予約のメールをお送りします。',
+              ]}
+            </h4>
+          </PostBody>
         </Container>
       </div>
     </>

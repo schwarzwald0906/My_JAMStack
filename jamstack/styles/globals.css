@@ -35,7 +35,7 @@
   --mobile: 767px;
 }
 
-/* 基本設定 */
+/* 基本設定  */
 body {
   color: var(--black);
   font-family: 'Noto Sans Kannada-Thin', sans-serif;
@@ -107,4 +107,22 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Agenda-Thin';
+  font-weight: normal;
+}
+
+th {
+  background-color: #f2f2f2;
+  width: 120px;
+}
+
+td {
+  vertical-align: top;
 }

@@ -20,6 +20,7 @@ export default function Footer() {
         </figure>
         <Container>
           <Contact />
+          <br />
           <p style={{ fontFamily: 'Agenda' }}>© 2023 FLUXUS LOCUS</p>
         </Container>
       </div>
