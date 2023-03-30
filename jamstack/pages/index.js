@@ -14,6 +14,7 @@ import cureStep2 from 'public/images/toppage/cure-step2.png'
 import cureStep3 from 'public/images/toppage/cure-step3.png'
 import cureStep4 from 'public/images/toppage/cure-step4.png'
 import cureStep5 from 'public/images/toppage/cure-step5.png'
+import TopPageFigure from 'components/oraganism/topPageFigure'
 
 export default function Home() {
   return (
@@ -84,6 +85,11 @@ export default function Home() {
               '当院では、入念な触診により、神経系やインナーマッスルにアプローチし、痛み・不調をその原因から取り除きます。',
             ]}
           </p>
+          <Container>
+            <div className={utilStyles.center}>
+              <TopPageFigure />
+            </div>
+          </Container>
           <Title digit={2} msg="身体のパフォーマンスを向上させたいお客様" />
           <p>
             {[
@@ -110,12 +116,10 @@ export default function Home() {
 
       <div style={{ backgroundColor: 'var(--light-pink)' }}>
         <Container>
-          <div>
-            <h3 className={utilStyles.center}>
-              FLUXUS LOCUSで人生が変わったお客様
-            </h3>
-            <SlideShow />
-          </div>
+          <h3 className={utilStyles.center}>
+            FLUXUS LOCUSで人生が変わったお客様
+          </h3>
+          <SlideShow />
         </Container>
       </div>
       <div style={{ backgroundColor: 'var(--light-gray)' }}>
