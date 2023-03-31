@@ -1,0 +1,22 @@
+/* .container {
+  display: flex;
+}
+.item {
+  margin: 0 5px;
+  color: var(--brown);
+  size: xs;
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.item {
+  font-size: 15px; /* デフォルトのフォントサイズ */
+  margin-right: 0.5rem;
+  color: var(--brown);
+  width: var(--small-heading3);
+  height: var(--small-heading3);
+}

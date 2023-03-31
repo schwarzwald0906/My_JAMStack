@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+  .squareContainer {
+    --size: 35px;
+    --overlap: -7px;
+    top: 7px;
+    left: 7px;
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .squareContainer {
+    --size: 26px;
+    --overlap: -5px;
+    top: 5px;
+    left: 5px;
+    position: relative;
+  }
+}
+
+.squareBackground {
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--brown);
+}
+
+.squareOverlay {
+  position: absolute;
+  top: var(--overlap);
+  left: var(--overlap);
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--white);
+  border: 1px solid var(--brown);
+  z-index: 1;
+  font-size: var(--small-heading2);
+  color: var(--brown);
+  font-weight: normal;
+  font-family: 'Noto Sans Kannada-Thin';
+  text-align: center;
+}
+
+.squareText {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: var(--small-heading2);
+  color: var(--brown);
+  font-weight: normal;
+  font-family: 'Noto Sans Kannada-Thin';
+  text-align: center;
+  z-index: 3;
+}

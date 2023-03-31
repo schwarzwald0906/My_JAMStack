@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+  border: 2px solid var(--light-pink);
+  font-size: 16px;
+  margin-right: 32px;
+}
+
+.brownCircle {
+  composes: circle;
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.pinkBrownCircle {
+  composes: circle;
+  color: var(--brown);
+  background-color: var(--light-pink);
+}
+
+.pinkRedCircle {
+  composes: pinkBrownCircle;
+  color: rgb(251, 104, 104);
+}
+
+.circle span {
+  display: block;
+}
+
+.triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-left: 32px solid var(--brown);
+  border-bottom: 16px solid transparent;
+  margin-right: 32px;
+}
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: -38px;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-left: 32px solid var(--white);
+  border-bottom: 16px solid transparent;
+}
+
+.whiteRectangle {
+  position: relative;
+  width: 372px;
+  height: 40px;
+  margin: 40.1px 0px 23px 196px;
+  padding: 7px 0px;
+  background-color: var(--white);
+  color: var(--brown);
+  align-items: right;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Agenda-Thin';
+}
+
+.yellowRectangle {
+  composes: whiteRectangle;
+  background-color: var(--light-yellow);
+  margin: 20px 40px 23px 0px;
+  width: 604px;
+}
+
+@media (max-width: 767px) {
+  .circle {
+    width: 93px;
+    height: 93px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  .brownCircle {
+    composes: circle;
+    color: var(--white);
+    background-color: var(--brown);
+  }
+
+  .pinkBrownCircle {
+    composes: circle;
+    color: var(--brown);
+    background-color: var(--light-pink);
+  }
+
+  .pinkRedCircle {
+    composes: brownCircle;
+    color: rgb(251, 104, 104);
+  }
+
+  .triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 17px solid var(--brown);
+    border-bottom: 12px solid transparent;
+    margin-right: 5px;
+  }
+
+  .triangle::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 17px solid var(--white);
+    border-bottom: 12px solid transparent;
+  }
+
+  .whiteRectangle {
+    width: 218.3px;
+    height: 40px;
+    margin: 28.1px 0px 23px 103px;
+    padding: 8px 0px 0px 0px;
+    background-color: var(--white);
+    color: var(--brown);
+    align-items: right;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .yellowRectangle {
+    composes: whiteRectangle;
+    width: 329px;
+    margin: 8px 10px 13px 0px;
+    background-color: var(--light-yellow);
+  }
+}

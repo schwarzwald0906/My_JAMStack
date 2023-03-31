@@ -2,10 +2,10 @@ import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 const images = [
-  '/images/customer.png',
-  '/images/customer1.png',
-  '/images/customer2.png',
-  '/images/customer3.png',
+  '/images/topPage/customer1.jpg',
+  '/images/topPage/customer2.jpg',
+  '/images/topPage/customer3.jpg',
+  '/images/topPage/customer4.jpg',
 ]
 
 export default function SlideShow() {
@@ -15,7 +15,7 @@ export default function SlideShow() {
       infiniteLoop
       showStatus={false}
       showThumbs={false}
-      style={{ width: '416px', height: '416px' }}
+      style={{ width: '333px', height: '333px' }}
     >
       {images.map((image, index) => (
         <div key={index}>

@@ -17,7 +17,7 @@ export default function AboutCard({ imageSrc, imageAlt, content, title }) {
           </figure>
         </div>
         <h3 style={{ fonSize: 'var(--small-heading3)' }}>{title}</h3>
-        <body>{content}</body>
+        <p>{content}</p>
       </div>
     </div>
   )

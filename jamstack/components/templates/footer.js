@@ -3,7 +3,7 @@ import utilStyles from 'styles/utils.module.css'
 import Image from 'next/image'
 import icon from 'public/images/icon.png'
 import Container from 'components/container'
-import Contact from 'components/molecules/contact'
+import Contact from 'components/atom/contact'
 
 export default function Footer() {
   return (
@@ -20,6 +20,7 @@ export default function Footer() {
         </figure>
         <Container>
           <Contact />
+          <br />
           <p style={{ fontFamily: 'Agenda' }}>© 2023 FLUXUS LOCUS</p>
         </Container>
       </div>
