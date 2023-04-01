@@ -5,7 +5,10 @@ import utilStyles from 'styles/utils.module.css'
 import styles from 'styles/about.module.css'
 import Image from 'next/image'
 
-import about1 from 'public/images/about/about1.jpg'
+import about1 from 'public/images/about/about1.png'
+import about2 from 'public/images/about/about2.jpg'
+import about3 from 'public/images/about/about3.png'
+import about4 from 'public/images/about/about4.jpg'
 import aboutEyeCatch from 'public/images/about/about-eyecatch.jpg'
 
 export default function About() {
@@ -44,8 +47,8 @@ export default function About() {
               ]}
             />
             <AboutCard
-              imageSrc={about1}
-              imageAlt="about1"
+              imageSrc={about2}
+              imageAlt="about2"
               title="リハビリ病院で働く"
               content={[
                 '私は、専門病院で理学療法士として働き始めました。その経験から分かったのは、「同じ治療やリハビリをしても、効果が出る人と出ない人がいることで、同じ苦しみを持ち続ける人もいる」ということでした。同じ薬・手術・マッサージ・筋トレをしても、二週間で痛みが消える人もいれば、一年たっても痛いままの人もいるのです。そして、私自身も治療をしてもすぐに元に戻ってしまうような気休め的な治療が非常に多いことに気づきました。',
@@ -54,8 +57,8 @@ export default function About() {
               ]}
             />
             <AboutCard
-              imageSrc={about1}
-              imageAlt="about1"
+              imageSrc={about3}
+              imageAlt="about3"
               title="試行錯誤"
               content={[
                 '個別の問題に近づくために、身体の構造をもっと細かく把握するための身体を触る技術を徹底的に磨きました。そうすると、一人一人の身体の深部で使われている筋肉が違うことに気づきました。見た目は同じように動いているのに、骨の付近まで触らないと分からない、深い筋肉の使い方の違いがある、と。',
@@ -66,8 +69,8 @@ export default function About() {
               ]}
             />
             <AboutCard
-              imageSrc={about1}
-              imageAlt="about1"
+              imageSrc={about4}
+              imageAlt="about4"
               title="開業へ"
               content={[
                 ' 効果的な運動ができたことに喜びを共有する一方で、悩みも生まれました。',

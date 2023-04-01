@@ -3,7 +3,9 @@ import Container from 'components/container'
 import OverviewTable from 'components/oraganism/ overviewTable'
 import utilStyles from 'styles/utils.module.css'
 
-import cureStep2 from 'public/images/toppage/cure-step2.png'
+import basicPlan from 'public/images/plan/basicPlan.jpg'
+import trainingPlan from 'public/images/plan/trainingPlan.jpg'
+import innerPlan from 'public/images/plan/innerPlan.jpg'
 import PlanCard from 'components/oraganism/planCard'
 
 export default function Plan() {
@@ -47,8 +49,8 @@ export default function Plan() {
             ※初回のみ、＋30分カウンセリングのお時間をいただきます
           </p>
           <PlanCard
-            imageSrc={cureStep2}
-            imageAlt="cureStep2"
+            imageSrc={basicPlan}
+            imageAlt="basicPlan"
             title="症状改善コース"
             firstPlan="初回 30分 3,800円 / 60分 8,800円"
             standardPlan="通常 30分 6,000円 / 60分 12,000円"
@@ -64,8 +66,8 @@ export default function Plan() {
           />
           <div style={{ padding: '10px 0px' }} />
           <PlanCard
-            imageSrc={cureStep2}
-            imageAlt="cureStep2"
+            imageSrc={trainingPlan}
+            imageAlt="trainingPlan"
             title="トレーニングコース"
             firstPlan="初回 30分 3,800円 / 60分 8,800円"
             standardPlan="通常 30分 6,000円 / 60分 12,000円"
@@ -93,8 +95,8 @@ export default function Plan() {
           />
           <div style={{ padding: '10px 0px' }} />
           <PlanCard
-            imageSrc={cureStep2}
-            imageAlt="cureStep2"
+            imageSrc={innerPlan}
+            imageAlt="innerPlan"
             title="インナーマッスル活性化コース"
             firstPlan="スタンダード　280,000円"
             standardPlan="プレミアム　　780,000円"
