@@ -31,16 +31,18 @@ export default function Home() {
       </figure>
       <div className={styles.hero}>
         <div className={styles.rectangle}>
-          <p className={styles.title}>
+          <p className={styles.textBlack}>
             {[
               '整形外科や整骨院に行っても完治しなかった方',
               <br />,
               '身体のパフォーマンスを向上させたい方',
             ]}
           </p>
-          <p className={styles.subtitle}>
-            あなたの思いを叶える施術院が、ここ桜木町にあります
+          <p className={styles.textBlack}>
+            あなたの思いを叶える施術院が、ここ
+            <span className={styles.textPink}>桜木町</span>にあります
           </p>
+
           <p className={styles.name}>理学療法士　行之内真人</p>
         </div>
       </div>
@@ -61,7 +63,7 @@ export default function Home() {
       </div>
       <div style={{ backgroundColor: 'var(--light-gray)' }}>
         <Container>
-          <h4 style={{ color: 'var(--black)' }}>
+          <h4>
             {[
               '当院では、アメリカの整体医学を取り入れ',
               <br />,
@@ -153,7 +155,7 @@ export default function Home() {
               title="今後の説明（希望者のみ）"
               content="身体に起きている問題を解決するためには他にどこのアプローチが 必要か、どのくらい期間がかかるかの計画を希望者にのみ説明します。 "
             />
-            <h3 className={utilStyles.center}>ご予約はこちらから</h3>
+            {/* <h3 className={utilStyles.center}>ご予約はこちらから</h3>
             <h4>
               {[
                 'リンク先からWEB予約をお願いします。',
@@ -162,7 +164,7 @@ export default function Home() {
                 <br />,
                 'その後、こちらで日程を確認し、本予約のメールをお送りします。',
               ]}
-            </h4>
+            </h4> */}
           </PostBody>
         </Container>
       </div>

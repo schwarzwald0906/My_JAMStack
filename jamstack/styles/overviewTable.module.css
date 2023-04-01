@@ -1,0 +1,10 @@
+.container {
+  margin: 20px 0;
+  /* border-collapse: collapse; */
+  font-size: 14px;
+  background-color: var(--white);
+}
+.tables {
+  /* border: 1px solid var(--black); */
+  width: auto;
+}

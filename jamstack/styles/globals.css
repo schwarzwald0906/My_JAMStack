@@ -4,7 +4,7 @@
   --light-white: #f8f8f8;
   --yellow: #e6cd8c;
   --light-yellow: rgba(230, 205, 140, 0.6);
-  --pink: #e4c6a6;
+  --pink: rgb(255, 228, 200);
   --light-pink: rgba(228, 198, 166, 0.4);
   --brown: #8e775d;
   --light-gray: #f3f3f3;
@@ -51,9 +51,15 @@ h2 {
 }
 
 h3,
-h4,
-p {
+h4 {
   color: var(--brown);
+  /* font-family: 'Noto Sans Kannada-Thin', sans-serif; */
+  font-family: 'Agenda-Thin', sans-serif;
+  font-weight: normal;
+}
+
+p {
+  color: var(--black);
   /* font-family: 'Noto Sans Kannada-Thin', sans-serif; */
   font-family: 'Agenda-Thin', sans-serif;
   font-weight: normal;
