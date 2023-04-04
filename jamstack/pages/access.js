@@ -11,7 +11,7 @@ import navi3 from 'public/images/access/navi3.jpg'
 import navi4 from 'public/images/access/navi4.png'
 import navi5 from 'public/images/access/navi5.jpeg'
 import accessEyeCatch from 'public/images/access/access-eyecatch.jpg'
-import OverviewTable from 'components/oraganism/ overviewTable'
+import OverviewTable from 'components/oraganism/overviewTable'
 
 export default function Access() {
   return (

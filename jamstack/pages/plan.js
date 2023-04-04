@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from 'components/container'
-import OverviewTable from 'components/oraganism/ overviewTable'
+import OverviewTable from 'components/oraganism/overviewTable'
 import utilStyles from 'styles/utils.module.css'
 
 import basicPlan from 'public/images/plan/basicPlan.jpg'
