@@ -9,11 +9,11 @@ import PostBody from 'components/post-body'
 import AboutCard from 'components/oraganism/aboutCard'
 import utilStyles from 'styles/utils.module.css'
 
-import homeEyeCatch from 'public/images/toppage/home-eyecatch.jpg'
-import cureStep2 from 'public/images/toppage/cure-step2.png'
-import cureStep3 from 'public/images/toppage/cure-step3.png'
-import cureStep4 from 'public/images/toppage/cure-step4.png'
-import cureStep5 from 'public/images/toppage/cure-step5.png'
+import homeEyeCatch from 'public/images/topPage/home-eyecatch.jpg'
+import cureStep2 from 'public/images/topPage/cure-step2.png'
+import cureStep3 from 'public/images/topPage/cure-step3.png'
+import cureStep4 from 'public/images/topPage/cure-step4.png'
+import cureStep5 from 'public/images/topPage/cure-step5.png'
 import TopPageFigure from 'components/oraganism/topPageFigure'
 
 export default function Home() {
