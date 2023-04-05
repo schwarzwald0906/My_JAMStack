@@ -24,6 +24,8 @@ export default function Access() {
           objectPosition="top"
           objectFit="cover"
           priority
+          placeholder="blur"
+          style={{ transition: '0.2s' }}
         />
       </figure>
       <div className={styles.hero}>
