@@ -23,6 +23,8 @@ export default function About() {
             objectPosition="top"
             objectFit="cover"
             priority
+            placeholder="blur"
+            style={{ transition: '0.2s' }}
           />
         </figure>
         <div className={styles.hero}>
