@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Agenda-Thin';
+  src: url('../fonts/Agenda-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  src: url('../fonts/NotoSansCJKjp-Regular.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKjp-DemiLight.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   /* color */
   --white: #fffffe;
@@ -38,7 +53,7 @@
 /* 基本設定  */
 body {
   color: var(--black);
-  font-family: 'Noto Sans Kannada-Thin', sans-serif;
+  font-family: 'Noto Sans CJK JP', sans-serif;
   font-size: var(--body);
   font-weight: normal;
 }

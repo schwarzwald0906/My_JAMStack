@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Agenda-Thin';
+  src: url('../fonts/Agenda-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* デスクトップ */
 @media (min-width: 768px) {
   .btn {
@@ -9,7 +16,7 @@
     gap: 2em;
     align-items: center;
     height: 80px;
-    font-family: 'Agenda';
+    font-family: 'Agenda-Thin';
     color: var(--brown);
   }
 }
@@ -92,7 +99,7 @@
     gap: 40px;
     place-content: center;
     text-align: left;
-    font-family: 'Agenda';
+    font-family: 'Agenda-Thin';
   }
 }
 

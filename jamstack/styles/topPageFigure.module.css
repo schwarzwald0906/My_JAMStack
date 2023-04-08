@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Agenda-Thin';
+  src: url('../fonts/Agenda-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
 .container {
   display: flex;
   align-items: center;
