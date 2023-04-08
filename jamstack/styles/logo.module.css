@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Agenda-Thin';
+  src: url('../fonts/Agenda-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* デスクトップ */
 @media (min-width: 768px) {
   .logo {
@@ -5,7 +12,7 @@
     height: 48px;
     margin: 8px 17px 14px 0;
     object-fit: contain;
-    font-family: Agenda;
+    font-family: 'Agenda-Thin';
     font-size: 48px;
     font-weight: 100;
     font-stretch: normal;
@@ -24,7 +31,7 @@
     height: 48px;
     margin: 24px 17px 14px 0;
     object-fit: contain;
-    font-family: Agenda;
+    font-family: 'Agenda-Thin';
     font-size: 48px;
     font-weight: 100;
     font-stretch: normal;
