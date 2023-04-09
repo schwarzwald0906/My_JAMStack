@@ -7,8 +7,28 @@
 
 @font-face {
   font-family: 'Noto Sans CJK JP';
-  src: url('../fonts/NotoSansCJKjp-Regular.woff2') format('woff2'),
-    url('../fonts/NotoSansCJKjp-DemiLight.woff2') format('woff2');
+  src: url('../fonts/NotoSansCJKjp-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  src: url('../fonts/NotoSansCJKjp-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  src: url('../fonts/NotoSansCJKjp-DemiLight.woff2') format('woff2');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  src: url('../fonts/NotoSansCJKjp-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -54,6 +74,7 @@
 body {
   color: var(--black);
   font-family: 'Noto Sans CJK JP', sans-serif;
+  font-weight: 100;
   font-size: var(--body);
   font-weight: normal;
 }
@@ -65,19 +86,22 @@ h2 {
   font-weight: normal;
 }
 
-h3,
+h3 {
+  color: var(--brown);
+  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-weight: 100;
+}
+
 h4 {
   color: var(--brown);
-  /* font-family: 'Noto Sans Kannada-Thin', sans-serif; */
-  font-family: 'Agenda-Thin', sans-serif;
-  font-weight: normal;
+  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-weight: 350;
 }
 
 p {
   color: var(--black);
-  /* font-family: 'Noto Sans Kannada-Thin', sans-serif; */
-  font-family: 'Agenda-Thin', sans-serif;
-  font-weight: normal;
+  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -135,15 +159,16 @@ td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  font-family: 'Agenda-Thin';
-  font-weight: normal;
+  font-family: 'Noto Sans CJK JP', sans-serif;
 }
 
 th {
   background-color: #f2f2f2;
   width: 120px;
+  font-weight: 300;
 }
 
 td {
   vertical-align: top;
+  font-weight: 100;
 }
