@@ -26,6 +26,7 @@ export default function Access() {
           priority
           placeholder="blur"
           style={{ transition: '0.2s' }}
+          quality={50}
         />
       </figure>
       <div className={styles.hero}>
@@ -43,31 +44,33 @@ export default function Access() {
           <h3 className={utilStyles.center}>桜木町駅新南口からの道順</h3>
           <p style={{ padding: '10px 0px' }}>※新南口からが便利です</p>
           <PostBody>
-            <AccessCard
-              imageSrc={navi1}
-              imageAlt="navi1"
-              content="地図の赤丸が当院です"
-            />
-            <AccessCard
-              imageSrc={navi2}
-              imageAlt="navi2"
-              content="桜木町駅の新南口から改札を出たら、左へ道なりに歩きます"
-            />
-            <AccessCard
-              imageSrc={navi3}
-              imageAlt="navi3"
-              content="横断歩道を渡り、右側の弁天橋を渡ります"
-            />
-            <AccessCard
-              imageSrc={navi4}
-              imageAlt="navi4"
-              content="右手にFamilymartが見えてきます。その先の日本酒バルClareさんの隣が入口です"
-            />
-            <AccessCard
-              imageSrc={navi5}
-              imageAlt="navi5"
-              content="入口まで来たら、インターホンで705と押してください"
-            />
+            <div className={styles.gridContainer}>
+              <AccessCard
+                imageSrc={navi1}
+                imageAlt="navi1"
+                content="地図の赤丸が当院です"
+              />
+              <AccessCard
+                imageSrc={navi2}
+                imageAlt="navi2"
+                content="桜木町駅の新南口から改札を出たら、左へ道なりに歩きます"
+              />
+              <AccessCard
+                imageSrc={navi3}
+                imageAlt="navi3"
+                content="横断歩道を渡り、右側の弁天橋を渡ります"
+              />
+              <AccessCard
+                imageSrc={navi4}
+                imageAlt="navi4"
+                content="右手にFamilymartが見えてきます。その先の日本酒バルClareさんの隣が入口です"
+              />
+              <AccessCard
+                imageSrc={navi5}
+                imageAlt="navi5"
+                content="入口まで来たら、インターホンで705と押してください"
+              />
+            </div>
           </PostBody>
         </Container>
       </div>

@@ -1,4 +1,3 @@
-// import React from 'react'
 import Container from 'components/container'
 import Image from 'next/image'
 import styles from 'styles/index.module.css'
@@ -6,7 +5,7 @@ import SlideShow from 'components/molecules/slideShow'
 import CheckBox from 'components/molecules/checkBox'
 import Title from 'components/molecules/title'
 import PostBody from 'components/post-body'
-import AboutCard from 'components/oraganism/aboutCard'
+import TopCard from 'components/oraganism/topCard'
 import utilStyles from 'styles/utils.module.css'
 
 import homeEyeCatch from 'public/images/topPage/home-eyecatch.jpg'
@@ -15,6 +14,7 @@ import cureStep3 from 'public/images/topPage/cure-step3.png'
 import cureStep4 from 'public/images/topPage/cure-step4.png'
 import cureStep5 from 'public/images/topPage/cure-step5.png'
 import TopPageFigure from 'components/oraganism/topPageFigure'
+import AboutCard from 'components/oraganism/aboutCard'
 
 export default function Home() {
   return (
@@ -29,6 +29,7 @@ export default function Home() {
           priority
           placeholder="blur"
           style={{ transition: '0.2s' }}
+          quality={50}
         />
       </figure>
       <div className={styles.hero}>
@@ -130,34 +131,35 @@ export default function Home() {
         <Container>
           <h3 className={utilStyles.center}>施術の流れ</h3>
           <PostBody>
-            <AboutCard
-              imageSrc={cureStep2}
-              imageAlt="cureStep2"
-              title="カウンセリング"
-              content="生活習慣や現在に至るまで身体に
+            <div className={styles.gridContainer}>
+              <TopCard
+                imageSrc={cureStep2}
+                imageAlt="cureStep2"
+                title="カウンセリング"
+                content="生活習慣や現在に至るまで身体に
               積み重なったダメージなどから、身体の不調の発生原因を分析
               します。他院ではここまで細かく聞かれたことが無いと驚かれ
               ます。"
-            />
-            <AboutCard
-              imageSrc={cureStep3}
-              imageAlt="cureStep3"
-              title="触診"
-              content="身体の不調が生じている部位や発生原因と考えられる部位を、血管や神経まで 身体の最深部まで触診して、異常を発している部位を特定します。 "
-            />
-            <AboutCard
-              imageSrc={cureStep4}
-              imageAlt="cureStep4"
-              title="施術"
-              content="ゆがみの原因部位を調整し、痛みや不調を改善します。その場で変化や効果を実感していただけます。"
-            />
-            <AboutCard
-              imageSrc={cureStep5}
-              imageAlt="cureStep5"
-              title="今後の説明（希望者のみ）"
-              content="身体に起きている問題を解決するためには他にどこのアプローチが 必要か、どのくらい期間がかかるかの計画を希望者にのみ説明します。 "
-            />
-            {/* <h3 className={utilStyles.center}>ご予約はこちらから</h3>
+              />
+              <TopCard
+                imageSrc={cureStep3}
+                imageAlt="cureStep3"
+                title="触診"
+                content="身体の不調が生じている部位や発生原因と考えられる部位を、血管や神経まで 身体の最深部まで触診して、異常を発している部位を特定します。 "
+              />
+              <TopCard
+                imageSrc={cureStep4}
+                imageAlt="cureStep4"
+                title="施術"
+                content="ゆがみの原因部位を調整し、痛みや不調を改善します。その場で変化や効果を実感していただけます。"
+              />
+              <TopCard
+                imageSrc={cureStep5}
+                imageAlt="cureStep5"
+                title="今後の説明（希望者のみ）"
+                content="身体に起きている問題を解決するためには他にどこのアプローチが 必要か、どのくらい期間がかかるかの計画を希望者にのみ説明します。 "
+              />
+              {/* <h3 className={utilStyles.center}>ご予約はこちらから</h3>
             <h4>
               {[
                 'リンク先からWEB予約をお願いします。',
@@ -167,6 +169,7 @@ export default function Home() {
                 'その後、こちらで日程を確認し、本予約のメールをお送りします。',
               ]}
             </h4> */}
+            </div>
           </PostBody>
         </Container>
       </div>
