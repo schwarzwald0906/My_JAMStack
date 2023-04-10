@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import style from 'styles/TopCard.module.css'
+import style from 'styles/topCard.module.css'
 
 export default function TopCard({ imageSrc, imageAlt, content, title }) {
   return (
