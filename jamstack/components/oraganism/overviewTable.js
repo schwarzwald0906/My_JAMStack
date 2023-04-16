@@ -27,7 +27,7 @@ export default function OverviewTable() {
           </tr>
           <tr>
             <th>住所</th>
-            <td>〒231-0011 神奈川県横浜市中区太田町6丁目86 Opa Rivage 705 </td>
+            <td>神奈川県横浜市中区太田町6丁目86 Opa Rivage 705 </td>
           </tr>
         </tbody>
       </table>

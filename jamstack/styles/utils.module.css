@@ -13,7 +13,7 @@
 
 @media (min-width: 768px) {
   .sideBySide {
-    /* flex-direction: row; */
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -21,8 +21,8 @@
 /* 横並び（中央揃え） */
 .sideBySideCenter {
   composes: sideBySide;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -33,7 +33,9 @@
 
 /* 単純（中央揃え） */
 .center {
-  composes: sideBySide;
+  /* composes: sideBySide; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }

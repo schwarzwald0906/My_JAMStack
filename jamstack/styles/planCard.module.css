@@ -1,15 +1,54 @@
-.wrapper {
-  padding: var(--space-xs) 0;
-  width: 92%;
-  margin: 0 auto;
+@media (min-width: 767px){
+  .deskTopWrapper {
+    padding: var(--space-xs) 0;
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px){
+  .smahoWrapper {
+    padding: var(--space-xs) 0;
+    width: 92%;
+    margin: 0 auto;
+    align-items: center;
+    /* text-align: center; */
+  }
 }
 
 .line {
-  width: 326.5px;
+  width: auto;
   height: 1px;
   background-color: var(--dark-gray);
 }
 
 .plan {
   padding: 0px 20px;
+  text-align: left;
+  align-items: left;
+}
+
+@media (min-width: 768px) {
+  .plan {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.flexContainer {
+  composes: sideBySideCenter from 'styles/utils.module.css';
+  /* display: flex;
+  align-items: center; */
+}
+
+.image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .image {
+    flex: 0 0 auto;
+    margin-right: 1rem; /* 画像とタイトルの間の余白を設定 */
+    width: 50%;
+  }
 }

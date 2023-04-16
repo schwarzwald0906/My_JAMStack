@@ -5,19 +5,19 @@ export default function AboutCard({ imageSrc, imageAlt, content, title }) {
   return (
     <div style={{ backgroundColor: 'var(--white)' }}>
       <div className={style.wrapper}>
-        <div>
-          <figure>
+        <div className={style.flexContainer}>
+          <figure className={style.image}>
             <Image
               src={imageSrc}
               alt={imageAlt}
               layout="responsive"
-              width={368}
-              height={218}
+              sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw"
             />
           </figure>
+          <h4>{title}
+          <p>{content}</p>
+          </h4>
         </div>
-        <h3 style={{ fonSize: 'var(--small-heading3)' }}>{title}</h3>
-        <p>{content}</p>
       </div>
     </div>
   )
