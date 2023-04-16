@@ -34,19 +34,21 @@ export default function Home() {
       </figure>
       <div className={styles.hero}>
         <div className={styles.rectangle}>
-          <p className={styles.textBlack}>
+          <h4 className={styles.textBlack}>
             {[
-              '整形外科や整骨院に行っても完治しなかった方',
+              '本気で治したい方のみ、お越しください',
               <br />,
-              '身体のパフォーマンスを向上させたい方',
             ]}
-          </p>
-          <p className={styles.textBlack}>
-            あなたの思いを叶える施術院が、ここ
-            <span className={styles.textPink}>桜木町</span>にあります
-          </p>
-
-          <p className={styles.name}>理学療法士　行之内真人</p>
+            <span className={styles.textPink}>理学療法士</span>
+              {[
+              'の私が施術します',
+              <br />,
+              '完治するまで必ずお付きあいします',
+            ]}
+            </h4>
+            <p className={styles.name}>
+              <span className={styles.textPink}>理学療法士</span>　行之内真人
+              </p>
         </div>
       </div>
 
@@ -136,10 +138,7 @@ export default function Home() {
                 imageSrc={cureStep2}
                 imageAlt="cureStep2"
                 title="カウンセリング"
-                content="生活習慣や現在に至るまで身体に
-              積み重なったダメージなどから、身体の不調の発生原因を分析
-              します。他院ではここまで細かく聞かれたことが無いと驚かれ
-              ます。"
+                content="生活習慣や現在に至るまで身体に積み重なったダメージなどから、身体の不調の発生原因を分析します。他院ではここまで細かく聞かれたことが無いと驚かれます。"
               />
               <TopCard
                 imageSrc={cureStep3}

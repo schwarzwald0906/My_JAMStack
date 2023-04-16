@@ -63,7 +63,7 @@ export default function Access() {
               <AccessCard
                 imageSrc={navi4}
                 imageAlt="navi4"
-                content="右手にFamilymartが見えてきます。その先の日本酒バルClareさんの隣が入口です"
+                content="右手にFamily Martが見えてきます。その先の日本酒バルClareさんの隣が入口です"
               />
               <AccessCard
                 imageSrc={navi5}
