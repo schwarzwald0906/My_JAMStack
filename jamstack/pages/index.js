@@ -126,7 +126,8 @@ export default function Home() {
           <h3 className={utilStyles.center}>
             FLUXUS LOCUSで人生が変わったお客様
           </h3>
-          <SlideShow />
+          < SlideShow />
+          <div/>
         </Container>
       </div>
       <div style={{ backgroundColor: 'var(--light-gray)' }}>

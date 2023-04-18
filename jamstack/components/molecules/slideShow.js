@@ -10,22 +10,24 @@ const images = [
 
 export default function SlideShow() {
   return (
-    <Carousel
-      autoPlay
-      infiniteLoop
-      showStatus={false}
-      showThumbs={false}
-      style={{ width: '333px', height: '333px' }}
-    >
-      {images.map((image, index) => (
-        <div key={index}>
-          <img
-            src={image}
-            alt={`Slide ${index + 1}`}
-            // style={{ width: '25%', objectFit: 'contain' }}
-          />
-        </div>
-      ))}
-    </Carousel>
+    <div className={"showOnlyMobile"}>
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showStatus={false}
+        showThumbs={false}
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+      >
+        {images.map((image, index) => (
+          <div key={index}>
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              // style={{ width: '25%', objectFit: 'contain' }}
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
   )
 }
