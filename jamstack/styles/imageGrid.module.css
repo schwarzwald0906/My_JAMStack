@@ -1,0 +1,9 @@
+.imageRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+}

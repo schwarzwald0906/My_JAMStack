@@ -14,7 +14,7 @@ import cureStep3 from 'public/images/topPage/cure-step3.png'
 import cureStep4 from 'public/images/topPage/cure-step4.png'
 import cureStep5 from 'public/images/topPage/cure-step5.png'
 import TopPageFigure from 'components/oraganism/topPageFigure'
-import AboutCard from 'components/oraganism/aboutCard'
+import ImageGrid from 'components/molecules/imageGrid'
 
 export default function Home() {
   return (
@@ -35,20 +35,13 @@ export default function Home() {
       <div className={styles.hero}>
         <div className={styles.rectangle}>
           <h4 className={styles.textBlack}>
-            {[
-              '本気で治したい方のみ、お越しください',
-              <br />,
-            ]}
+            {['本気で治したい方のみ、お越しください', <br />]}
             <span className={styles.textPink}>理学療法士</span>
-              {[
-              'の私が施術します',
-              <br />,
-              '完治するまで必ずお付きあいします',
-            ]}
-            </h4>
-            <p className={styles.name}>
-              <span className={styles.textPink}>理学療法士</span>　行之内真人
-              </p>
+            {['の私が施術します', <br />, '完治するまで必ずお付きあいします']}
+          </h4>
+          <p className={styles.name}>
+            <span className={styles.textPink}>理学療法士</span>　行之内真人
+          </p>
         </div>
       </div>
 
@@ -126,8 +119,11 @@ export default function Home() {
           <h3 className={utilStyles.center}>
             FLUXUS LOCUSで人生が変わったお客様
           </h3>
-          < SlideShow />
-          <div/>
+          <SlideShow />
+          <div className="container mx-auto py-4">
+            <ImageGrid />
+          </div>
+          <div />
         </Container>
       </div>
       <div style={{ backgroundColor: 'var(--light-gray)' }}>
