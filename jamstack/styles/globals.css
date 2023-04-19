@@ -172,3 +172,24 @@ td {
   vertical-align: top;
   font-weight: 100;
 }
+
+
+.showOnlyMobile {
+  display: none;
+}
+/* モバイル用のスタイル */
+@media (max-width: 768px) {
+  .showOnlyMobile {
+    display: block;
+  }
+}
+
+.showOnlyDesktop {
+  display: none;
+}
+/* デスクトップ用のスタイル */
+@media (min-width: 767px) {
+  .showOnlyDesktop {
+    display: block;
+  }
+}
