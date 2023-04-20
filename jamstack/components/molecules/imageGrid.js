@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from 'styles/imageGrid.module.css'
 
-const ImageGrid = () => {
+export default function ImageGrid() {
   return (
     <div className={'showOnlyDesktop'}>
       <div className={styles.imageRow}>
@@ -33,5 +33,3 @@ const ImageGrid = () => {
     </div>
   )
 }
-
-export default ImageGrid

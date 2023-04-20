@@ -5,7 +5,8 @@
 }
 
 .item {
-  font-size: 15px; /* デフォルトのフォントサイズ */
+  font-size: 15px;
+  /* デフォルトのフォントサイズ */
   margin-right: 0.5rem;
   color: var(--brown);
   width: var(--small-heading3);

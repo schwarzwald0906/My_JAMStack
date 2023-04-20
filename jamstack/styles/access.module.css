@@ -9,6 +9,7 @@
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -webkit-text-stroke: 1px #707070;
 }
+
 .rectangle {
   position: absolute;
   bottom: 0;
@@ -17,6 +18,7 @@
   background-color: rgba(255, 253, 253, 0.75);
   color: #fff;
 }
+
 .title {
   font-size: var(--heading2);
   color: var(--brown);
@@ -27,30 +29,34 @@
 /* デスクトップ */
 @media (min-width: 768px) {
   .hero {
-  top: 75%;
-  height: 14px;
+    top: 75%;
+    height: 14px;
   }
+
   .rectangle {
-  padding: 20px 20px 20px 75px;
+    padding: 20px 20px 20px 75px;
   }
+
   .gridContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-jump);
-  margin-top: var(--space-xs);
-  margin-bottom: var(--space-lg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-jump);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-lg);
   }
 }
 
 /* モバイル */
 @media (max-width: 767px) {
   .hero {
-  top: 290px;
-  height: 31px;
+    top: 290px;
+    height: 31px;
   }
+
   .rectangle {
-  padding: 10px 15px;
+    padding: 10px 15px;
   }
+
   .gridContainer {
     display: grid;
     gap: var(--space-jump);

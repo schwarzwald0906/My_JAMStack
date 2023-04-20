@@ -10,8 +10,10 @@
   align-items: center;
 }
 
-.h3, .p {
-  flex: 1; /* コンテンツは残りの可用領域を占有 */
+.h3,
+.p {
+  flex: 1;
+  /* コンテンツは残りの可用領域を占有 */
   line-height: 0;
 }
 
@@ -23,7 +25,8 @@
 @media (min-width: 768px) {
   .image {
     flex: 0 0 auto;
-    margin-right: 1rem; /* 画像とタイトルの間の余白を設定 */
+    margin-right: 1rem;
+    /* 画像とタイトルの間の余白を設定 */
     width: 50%;
   }
 }

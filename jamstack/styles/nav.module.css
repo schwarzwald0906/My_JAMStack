@@ -16,6 +16,7 @@
 
 /* モバイル */
 @media (max-width: 767px) {
+
   /* ボタン */
   .btn {
     all: unset;
@@ -58,6 +59,7 @@
   .close .btn::before {
     transform: translateY(-8px);
   }
+
   .close .btn::after {
     transform: translateY(8px);
   }
@@ -65,9 +67,11 @@
   .open .btn::before {
     transform: rotate(45deg);
   }
+
   .open .btn::after {
     transform: rotate(-45deg);
   }
+
   .open .btn .bar {
     transform: scale(0);
   }
