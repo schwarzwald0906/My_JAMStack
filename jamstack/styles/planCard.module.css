@@ -1,4 +1,4 @@
-@media (min-width: 767px){
+@media (min-width: 767px) {
   .deskTopWrapper {
     padding: var(--space-xs) 0;
     width: 92%;
@@ -6,7 +6,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .smahoWrapper {
     padding: var(--space-xs) 0;
     width: 92%;
@@ -48,7 +48,8 @@
 @media (min-width: 768px) {
   .image {
     flex: 0 0 auto;
-    margin-right: 1rem; /* 画像とタイトルの間の余白を設定 */
+    margin-right: 1rem;
+    /* 画像とタイトルの間の余白を設定 */
     width: 50%;
   }
 }

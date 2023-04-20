@@ -2,6 +2,7 @@
   height: 80px;
   background-color: var(--white);
 }
+
 .headerContainer {
   display: flex;
   justify-content: space-between;

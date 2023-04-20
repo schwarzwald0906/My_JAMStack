@@ -5,6 +5,7 @@ import utilStyles from 'styles/utils.module.css'
 
 import basicPlan from 'public/images/plan/basicPlan.jpg'
 import trainingPlan from 'public/images/plan/trainingPlan.jpg'
+import beautyPlan from 'public/images/plan/beautyPlan.jpg'
 import innerPlan from 'public/images/plan/innerPlan.jpg'
 import PlanCard from 'components/oraganism/planCard'
 
@@ -52,7 +53,7 @@ export default function Plan() {
           <PlanCard
             imageSrc={basicPlan}
             imageAlt="basicPlan"
-            title="症状改善コース"
+            title="症状改善プラン"
             firstPlan="初回 30分 3,800円 / 60分 8,800円"
             standardPlan="通常 30分 6,000円 / 60分 12,000円"
             content={[
@@ -63,7 +64,7 @@ export default function Plan() {
           <PlanCard
             imageSrc={trainingPlan}
             imageAlt="trainingPlan"
-            title="トレーニングコース"
+            title="トレーニングプラン"
             firstPlan="初回 30分 3,800円 / 60分 8,800円"
             standardPlan="通常 30分 6,000円 / 60分 12,000円"
             content={[
@@ -71,23 +72,33 @@ export default function Plan() {
             ]}
           />
           <div style={{ padding: '10px 0px' }} />
-
+          <PlanCard
+            imageSrc={beautyPlan}
+            imageAlt="beautyPlan"
+            title="美容プラン"
+            firstPlan="通常 90分 18,000円"
+            standardPlan=""
+            content={[
+              '深部筋膜までケア、90分で内側からスリムに！全身のリンパケア・インナーマッスルトレーニング・痛くない小顔ケアが受けられる特別なアプローチエステ。自分の潜在能力を引き出す施術で。※着替え不要です。',
+            ]}
+          />
+          <div style={{ padding: '10px 0px' }} />
           <PlanCard
             imageSrc={innerPlan}
             imageAlt="innerPlan"
-            title="インナーマッスル活性化コース"
-            firstPlan="25回　250,000円"
+            title="インナーマッスル活性化プラン"
+            firstPlan="25回　450,000円"
             standardPlan="50回　700,000円"
             content={[
               '通常のリハビリ＆トレーニングに加え、',
-              <br/>,
+              <br />,
               '1.全身の評価を動画でお渡し',
-              <br/>,
-              '2.個別トレーニング指導動画 5本 ',
-              <br/>,
+              <br />,
+              '2.個別トレーニング指導動画 5本共有 ',
+              <br />,
               '3.FaceBookグループへご招待。質問にご回答します。',
-              <br/>,
-              '理想の体の動きを実現します。',
+              <br />,
+              '理想の体の動きを実現できます。',
             ]}
           />
         </Container>

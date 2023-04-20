@@ -25,7 +25,7 @@ export default function About() {
             priority
             placeholder="blur"
             style={{ transition: '0.2s' }}
-            quality={50}
+            quality={20}
           />
         </figure>
         <div className={styles.hero}>

@@ -29,8 +29,12 @@ export default function PlanCard({
             <div className={style.line}></div>
             <h3 className={style.plan}>{firstPlan}</h3>
             <div className={style.line}></div>
-            <h3 className={style.plan}>{standardPlan}</h3>
-            <div className={style.line}></div>
+            {standardPlan !== '' && (
+              <>
+                <h3 className={style.plan}>{standardPlan}</h3>
+                <div className={style.line}></div>
+              </>
+            )}
             <div style={{ padding: '10px 0px' }} />
             <p>{content}</p>
           </div>
