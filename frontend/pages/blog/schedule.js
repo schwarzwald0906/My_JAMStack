@@ -1,25 +1,48 @@
-import { client } from "lib/api";
-export default function Schedule() {
-    return (
-        <div>
-            Enter
-        </div>
-    );
+import Container from 'components/container'
+import PostHeader from 'components/templates/postHeader'
+import { getPostBySlug } from 'lib/api'
+
+export default function Schedule({
+  title,
+  publish,
+  content,
+  eyecatch,
+  categories,
+}) {
+  return (
+    <Container>
+      <article>
+        <PostHeader title={title} subtitle="Blog Article" publish={publish} />
+      </article>
+    </Container>
+  )
 }
 
-export async function getStaticProps(){
-    const resPropmise = client.get({
-        endpoint:'blogs'
-    })
-    // resPropmise.then((res)=>console.log(res)).catch((err)=>console.log(err))
-    // console.log(resPropmise)
-    try {
-        const res = await resPropmise;
-    } catch (err) {
-        console.log(err)
-    }
+export async function getStaticProps() {
+  const slug = 'schedule'
+  const post = await getPostBySlug(slug)
 
-    return{
-        props:{}
-    }
+  return {
+    props: {
+      title: post.title,
+      publish: post.publishDate,
+      content: post.content,
+      eyecatch: post.eyecatch,
+      categories: post.categories,
+    },
+  }
+  //   const resPropmise = client.get({
+  //     endpoint: 'blogs',
+  //   })
+  //   // resPropmise.then((res)=>console.log(res)).catch((err)=>console.log(err))
+  //   // console.log(resPropmise)
+  //   try {
+  //     const res = await resPropmise
+  //   } catch (err) {
+  //     console.log(err)
+  //   }
+
+  //   return {
+  //     props: {},
+  //   }
 }
