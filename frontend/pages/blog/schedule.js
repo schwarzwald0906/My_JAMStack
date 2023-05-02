@@ -1,6 +1,15 @@
 import Container from 'components/container'
+import PostBody from 'components/post-body'
+import ConvertBody from 'components/templates/convertBody'
+import PostCategories from 'components/templates/postCategories'
 import PostHeader from 'components/templates/postHeader'
+import {
+  TwoColumn,
+  TwoColumnMain,
+  TwoColumnSidebar,
+} from 'components/templates/twoColumn'
 import { getPostBySlug } from 'lib/api'
+import Image from 'next/image'
 
 export default function Schedule({
   title,
@@ -13,6 +22,27 @@ export default function Schedule({
     <Container>
       <article>
         <PostHeader title={title} subtitle="Blog Article" publish={publish} />
+        <figure>
+          <Image
+            src={eyecatch.url}
+            alt=""
+            layout="responsive"
+            width={eyecatch.width}
+            height={eyecatch.height}
+            sizes="(min-width:1152px) 1152px,100vw"
+            priority
+          />
+        </figure>
+        <TwoColumn>
+          <TwoColumnMain>
+            <PostBody>
+              <ConvertBody contentHTML={content} />
+            </PostBody>
+          </TwoColumnMain>
+          <TwoColumnSidebar>
+            <PostCategories categories={categories} />
+          </TwoColumnSidebar>
+        </TwoColumn>
       </article>
     </Container>
   )
@@ -31,18 +61,4 @@ export async function getStaticProps() {
       categories: post.categories,
     },
   }
-  //   const resPropmise = client.get({
-  //     endpoint: 'blogs',
-  //   })
-  //   // resPropmise.then((res)=>console.log(res)).catch((err)=>console.log(err))
-  //   // console.log(resPropmise)
-  //   try {
-  //     const res = await resPropmise
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-
-  //   return {
-  //     props: {},
-  //   }
 }

@@ -35,6 +35,13 @@
 
 :root {
   /* color */
+  --gray-10: #eeeeee;
+  --gray-25: #aaaaaa;
+  --gray-50: #707070;
+  --gray-75: #444444;
+  --black: #222222;
+  --accent: #0d87e0;
+
   --white: #fffffe;
   --light-white: #f8f8f8;
   --yellow: #e6cd8c;
@@ -45,7 +52,7 @@
   --light-gray: #f3f3f3;
   --dark-gray: #707070;
   --light-black: #222222;
-  --black: #000000;
+  /* --black: #000000; */
 
   /* タイポグラフィ（フォントサイズ） */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
@@ -208,4 +215,14 @@ td {
   .showOnlyDesktop {
     display: block;
   }
+}
+
+.item {
+  font-size: 15px;
+  /* デフォルトのフォントサイズ */
+  margin-right: 0.5rem;
+  color: var(--brown);
+  width: var(--small-heading3);
+  height: var(--small-heading3);
+  color: var(--dark-gray);
 }
