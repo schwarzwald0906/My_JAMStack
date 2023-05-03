@@ -8,12 +8,12 @@ import {
   TwoColumnMain,
   TwoColumnSidebar,
 } from 'components/templates/twoColumn'
-import { getPostBySlug } from 'lib/api'
+import { getPostBySlug, getAllSlugs } from 'lib/api'
 import Image from 'next/image'
 import { eyecatchLocal } from 'lib/constants'
 import { getPlaiceholder } from 'plaiceholder'
 
-export default function Schedule({
+export default function Post({
   title,
   publish,
   content,
@@ -52,8 +52,17 @@ export default function Schedule({
   )
 }
 
-export async function getStaticProps() {
-  const slug = 'schedule'
+export async function getStaticPaths() {
+  const allSlugs = await getAllSlugs()
+  return {
+    // paths: ['/blog/schedule', '/blog/calc', '/blog/music'],
+    paths: allSlugs.map(({ slug }) => `/blog/${slug}`),
+    fallback: false,
+  }
+}
+
+export async function getStaticProps(context) {
+  const slug = context.params.slug
   const post = await getPostBySlug(slug)
   const eyecatch = post.eyecatch ?? eyecatchLocal
   const { base64 } = await getPlaiceholder(eyecatch.url)
