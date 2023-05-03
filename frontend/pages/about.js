@@ -10,11 +10,17 @@ import about2 from 'public/images/about/about2.jpg'
 import about3 from 'public/images/about/about3.png'
 import about4 from 'public/images/about/about4.jpg'
 import aboutEyeCatch from 'public/images/about/about-eyecatch.jpg'
+import Head from 'next/head'
+import Meta from 'components/templates/meta'
 
 export default function About() {
   return (
     <>
       <div style={{ backgroundColor: 'var(--light-pink)' }}>
+        <Head>
+          <title>FLUXUS LOCUSについて</title>
+        </Head>
+        {/* <Meta pageTitle="FLUXUSLOCUSについて" /> */}
         <figure className={styles.figure}>
           <Image
             src={aboutEyeCatch}
