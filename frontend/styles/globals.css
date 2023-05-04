@@ -221,8 +221,7 @@ td {
   font-size: 15px;
   /* デフォルトのフォントサイズ */
   margin-right: 0.5rem;
-  color: var(--brown);
   width: var(--small-heading3);
   height: var(--small-heading3);
-  color: var(--dark-gray);
+  color: var(--gray-25);
 }

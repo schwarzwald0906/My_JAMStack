@@ -17,10 +17,7 @@ export default function About() {
   return (
     <>
       <div style={{ backgroundColor: 'var(--light-pink)' }}>
-        <Head>
-          <title>FLUXUS LOCUSについて</title>
-        </Head>
-        {/* <Meta pageTitle="FLUXUSLOCUSについて" /> */}
+        <Meta pageTitle="FLUXUS LOCUSについて" />
         <figure className={styles.figure}>
           <Image
             src={aboutEyeCatch}
