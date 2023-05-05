@@ -12,10 +12,15 @@ import navi4 from 'public/images/access/navi4.png'
 import navi5 from 'public/images/access/navi5.jpeg'
 import accessEyeCatch from 'public/images/access/access-eyecatch.jpg'
 import OverviewTable from 'components/oraganism/overviewTable'
+import Meta from 'components/templates/meta'
 
 export default function Access() {
   return (
     <>
+      <Meta
+        pageTitle="アクセス"
+        pageDesc="所在地・営業時間及び桜木町駅からの道順"
+      />
       <figure className={styles.figure}>
         <Image
           src={accessEyeCatch}

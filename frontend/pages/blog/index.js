@@ -4,11 +4,13 @@ import { getAllPosts } from 'lib/api'
 import Posts from 'components/oraganism/posts'
 import { eyecatchLocal } from 'lib/constants'
 import { getPlaiceholder } from 'plaiceholder'
+import Meta from 'components/templates/meta'
 
 export default function Blog({ posts }) {
   return (
     <>
       <Container>
+        <Meta pageTitle="ブログ一覧" pageDesc="記事の一覧" />
         <Posts posts={posts} />
       </Container>
     </>

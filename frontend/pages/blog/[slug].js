@@ -14,6 +14,7 @@ import { eyecatchLocal } from 'lib/constants'
 import { getPlaiceholder } from 'plaiceholder'
 import { prevNextPost } from 'lib/prevNextPost'
 import Pagination from 'components/oraganism/pagination'
+import Meta from 'components/templates/meta'
 
 export default function Post({
   title,
@@ -26,10 +27,12 @@ export default function Post({
 }) {
   return (
     <Container>
+      <Meta pageTitle="ブログ詳細" pageDesc="記事の詳細" />
       <article>
         <PostHeader title={title} subtitle="Blog Article" publish={publish} />
         <figure>
           <Image
+            key={eyecatch.url}
             src={eyecatch.url}
             alt=""
             layout="responsive"

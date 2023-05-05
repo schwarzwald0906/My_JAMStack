@@ -1,24 +1,26 @@
-import Container from 'components/container'
-import Image from 'next/image'
 import styles from 'styles/index.module.css'
-import SlideShow from 'components/molecules/slideShow'
-import CheckBox from 'components/molecules/checkBox'
-import Title from 'components/molecules/title'
-import PostBody from 'components/post-body'
-import TopCard from 'components/oraganism/topCard'
 import utilStyles from 'styles/utils.module.css'
-
 import homeEyeCatch from 'public/images/topPage/home-eyecatch.jpg'
 import cureStep2 from 'public/images/topPage/cure-step2.png'
 import cureStep3 from 'public/images/topPage/cure-step3.png'
 import cureStep4 from 'public/images/topPage/cure-step4.png'
 import cureStep5 from 'public/images/topPage/cure-step5.png'
+
+import Container from 'components/container'
+import Image from 'next/image'
+import SlideShow from 'components/molecules/slideShow'
+import CheckBox from 'components/molecules/checkBox'
+import Title from 'components/molecules/title'
+import PostBody from 'components/post-body'
+import TopCard from 'components/oraganism/topCard'
 import TopPageFigure from 'components/oraganism/topPageFigure'
 import ImageGrid from 'components/molecules/imageGrid'
+import Meta from 'components/templates/meta'
 
 export default function Home() {
   return (
     <>
+      <Meta />
       <figure className={styles.figure}>
         <Image
           src={homeEyeCatch}

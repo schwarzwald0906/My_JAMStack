@@ -8,11 +8,16 @@ import trainingPlan from 'public/images/plan/trainingPlan.jpg'
 import beautyPlan from 'public/images/plan/beautyPlan.jpg'
 import innerPlan from 'public/images/plan/innerPlan.jpg'
 import PlanCard from 'components/oraganism/planCard'
+import Meta from 'components/templates/meta'
 
 export default function Plan() {
   return (
     <>
       <div style={{ backgroundColor: 'var(--light-gray)' }}>
+        <Meta
+          pageTitle="料金・プラン"
+          pageDesc="施術の理念及び、プランの一覧"
+        />
         <Container>
           <h1 className={utilStyles.center} style={{ color: 'var(--black)' }}>
             施術について

@@ -1,7 +1,7 @@
 export const siteMeta = {
-  siteTitle: 'CUBE',
-  siteDesc: 'アウトプットしていくサイト',
-  siteUrl: 'https://*********',
+  siteTitle: 'FLUXUS LOCUS',
+  siteDesc: '理学療法士　行之内真人の整体 FLUXUS LOCUS(フラクサス ローカス)',
+  siteUrl: 'https://fluxus-locus.link/',
   siteLang: 'ja',
   siteLocale: 'ja_JP',
   siteType: 'website',

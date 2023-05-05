@@ -22,6 +22,7 @@ export default function Footer() {
           <Contact />
           <br />
           <p style={{ fontFamily: 'Agenda' }}>© 2023 FLUXUS LOCUS</p>
+          <p style={{ fontFamily: 'Agenda' }}>桜木町駅南口徒歩５分</p>
         </Container>
       </div>
     </footer>
