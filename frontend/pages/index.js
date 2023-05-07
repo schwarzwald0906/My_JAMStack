@@ -1,24 +1,26 @@
-import Container from 'components/container'
-import Image from 'next/image'
 import styles from 'styles/index.module.css'
-import SlideShow from 'components/molecules/slideShow'
-import CheckBox from 'components/molecules/checkBox'
-import Title from 'components/molecules/title'
-import PostBody from 'components/post-body'
-import TopCard from 'components/oraganism/topCard'
 import utilStyles from 'styles/utils.module.css'
-
 import homeEyeCatch from 'public/images/topPage/home-eyecatch.jpg'
 import cureStep2 from 'public/images/topPage/cure-step2.png'
 import cureStep3 from 'public/images/topPage/cure-step3.png'
 import cureStep4 from 'public/images/topPage/cure-step4.png'
 import cureStep5 from 'public/images/topPage/cure-step5.png'
+
+import Container from 'components/container'
+import Image from 'next/image'
+import SlideShow from 'components/molecules/slideShow'
+import CheckBox from 'components/molecules/checkBox'
+import Title from 'components/molecules/title'
+import PostBody from 'components/post-body'
+import TopCard from 'components/oraganism/topCard'
 import TopPageFigure from 'components/oraganism/topPageFigure'
 import ImageGrid from 'components/molecules/imageGrid'
+import Meta from 'components/templates/meta'
 
 export default function Home() {
   return (
     <>
+      <Meta />
       <figure className={styles.figure}>
         <Image
           src={homeEyeCatch}
@@ -50,7 +52,7 @@ export default function Home() {
           <h3 className={utilStyles.center}>
             このようなお悩みはありませんか？
           </h3>
-          <CheckBox msg="肩こり, 腰痛がどこに行っても良くならない" />
+          <CheckBox msg="肩こり・腰痛がどこに行っても良くならない" />
           <CheckBox msg="痛み止めやその場しのぎのマッサージはもう嫌だ" />
           <CheckBox msg="痛み・しびれから歩くのも生活するのもつらい" />
           <CheckBox msg="趣味の登山などを腰や膝の痛みで諦めている" />
@@ -95,9 +97,9 @@ export default function Home() {
             {[
               'あなたは、身体の筋肉の何割を「使えて」いますか？',
               <br />,
-              'アウターマッスルが200種あるのに対し、',
+              '筋肉は全部で200種あるのに対し、',
               <br />,
-              'インナーマッスルは、なんと202種',
+              'そのうちインナーマッスルは、なんと101種も占めています。',
               <br />,
               <br />,
               'しかし世の中にアウターマッスルの鍛え方を解説する本や動画は数あれど、',

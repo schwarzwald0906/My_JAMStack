@@ -42,11 +42,6 @@ export default function Nav() {
             <a onClick={closeNav}>FLUXUS LOCUSについて</a>
           </Link>
         </li>
-        {/* <li>
-          <Link legacyBehavior href="/blog">
-            <a onClick={closeNav}>ブログ</a>
-          </Link>
-        </li> */}
         <li>
           <Link legacyBehavior href="/plan">
             <a onClick={closeNav}>プラン・料金</a>
@@ -55,6 +50,11 @@ export default function Nav() {
         <li>
           <Link legacyBehavior href="/access">
             <a onClick={closeNav}>アクセス</a>
+          </Link>
+        </li>
+        <li>
+          <Link legacyBehavior href="/blog">
+            <a onClick={closeNav}>ブログ</a>
           </Link>
         </li>
         <li>
