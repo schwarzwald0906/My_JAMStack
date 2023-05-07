@@ -52,7 +52,7 @@ export default function Home() {
           <h3 className={utilStyles.center}>
             このようなお悩みはありませんか？
           </h3>
-          <CheckBox msg="肩こり, 腰痛がどこに行っても良くならない" />
+          <CheckBox msg="肩こり・腰痛がどこに行っても良くならない" />
           <CheckBox msg="痛み止めやその場しのぎのマッサージはもう嫌だ" />
           <CheckBox msg="痛み・しびれから歩くのも生活するのもつらい" />
           <CheckBox msg="趣味の登山などを腰や膝の痛みで諦めている" />
