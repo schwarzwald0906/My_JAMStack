@@ -22,6 +22,7 @@ export default function Post({
   content,
   eyecatch,
   categories,
+  smallCategories,
   prevPost,
   nextPost,
 }) {
@@ -51,7 +52,10 @@ export default function Post({
             </PostBody>
           </TwoColumnMain>
           <TwoColumnSidebar>
-            <PostCategories categories={categories} />
+            <PostCategories
+              categories={categories}
+              smallCategories={smallCategories}
+            />
           </TwoColumnSidebar>
         </TwoColumn>
         <Pagination
@@ -95,6 +99,7 @@ export async function getStaticProps(context) {
         content: post.content,
         eyecatch: eyecatch,
         categories: post.categories,
+        smallCategories: post.smallcategories,
         prevPost: prevPost,
         nextPost: nextPost,
       },
