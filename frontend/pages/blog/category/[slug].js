@@ -17,7 +17,7 @@ export default function Category({ name, posts }) {
 }
 
 export async function getStaticPaths() {
-  const allCats = await getAllCategories(5)
+  const allCats = await getAllCategories()
   return {
     paths: allCats.map(({ slug }) => `/blog/category/${slug}`),
     fallback: false,
