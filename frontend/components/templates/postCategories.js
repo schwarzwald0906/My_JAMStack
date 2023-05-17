@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 
-export default function PostCategories({ categories }) {
+export default function PostCategories({ categories, smallCategories }) {
   return (
     <div className={styles.flexContainer}>
       <h3 className={styles.heading}>
@@ -14,6 +14,14 @@ export default function PostCategories({ categories }) {
         <li key={categories.slug}>
           <Link legacyBehavior href={`/blog/category/${categories.slug}`}>
             <a>{categories.name}</a>
+          </Link>
+        </li>
+        <li key={smallCategories.slug}>
+          <Link
+            legacyBehavior
+            href={`/blog/smallcategory/${smallCategories.slug}`}
+          >
+            <a>{smallCategories.name}</a>
           </Link>
         </li>
 

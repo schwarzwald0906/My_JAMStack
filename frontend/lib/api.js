@@ -59,7 +59,23 @@ export async function getAllCategories(limit = 100) {
     })
     return categories.contents
   } catch (err) {
-    console.log('~~ getAllPosts ~~')
+    console.log('~~ getAllCategories ~~')
+    console.log(err)
+  }
+}
+/** 小カテゴリを取得するAPI */
+export async function getAllSmallCategories(limit = 100) {
+  try {
+    const smallCategories = await client.get({
+      endpoint: 'smallcategories',
+      queries: {
+        fields: 'name,id,slug,largecategory',
+        limit: limit,
+      },
+    })
+    return smallCategories.contents
+  } catch (err) {
+    console.log('~~ getAllSmallCategories ~~')
     console.log(err)
   }
 }
@@ -78,6 +94,26 @@ export async function getAllPostsByCategory(catID, limit = 100) {
     return posts.contents
   } catch (err) {
     console.log('~~ getAllPostsByCategory ~~')
+    console.log(err)
+  }
+}
+
+/**小カテゴリに属している記事を一覧で表示 */
+
+export async function getAllPostsBySmallCategory(catID, limit = 100) {
+  try {
+    const posts = await client.get({
+      endpoint: 'blogs',
+      queries: {
+        filters: `smallcategories[equals]${catID}`,
+        fields: 'title,slug,eyecatch',
+        orders: '-publishDate',
+        limit: limit,
+      },
+    })
+    return posts.contents
+  } catch (err) {
+    console.log('~~ getAllPostsBySmallCategory ~~')
     console.log(err)
   }
 }

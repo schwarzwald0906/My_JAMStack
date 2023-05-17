@@ -26,7 +26,7 @@ export default function Pagination({
       )}
       {nextText && nextUrl && (
         <li className={styles.next}>
-          <Link legacyBehavior href={prevUrl}>
+          <Link legacyBehavior href={nextUrl}>
             <a className={styles.iconText}>
               <FontAwesomeIcon icon={faChevronRight} className={'item'} />
               <span>{nextText}</span>
