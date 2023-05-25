@@ -42,6 +42,7 @@ export default function Home() {
             {['の私が施術します', <br />, '完治するまで必ずお付きあいします']}
           </h4>
           <p className={styles.name}>
+            {['横浜・桜木町徒歩5分', <br />]}
             <span className={styles.textPink}>理学療法士</span>　行之内真人
           </p>
         </div>
