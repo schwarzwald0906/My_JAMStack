@@ -21,8 +21,17 @@ export default function Footer() {
         <Container>
           <Contact />
           <br />
+          <p className={styles.description}>
+            {[
+              'TEL：070-8351-6230',
+              <br />,
+              '住所：神奈川県横浜市中区太田町６丁目８６ Opa Rivage705',
+              <br />,
+              '営業時間：9時30分～20時00分 水曜日 定休日',
+            ]}
+          </p>
+          <br />
           <p style={{ fontFamily: 'Agenda' }}>© 2023 FLUXUS LOCUS</p>
-          <p style={{ fontFamily: 'Agenda' }}>桜木町駅南口徒歩５分</p>
         </Container>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 export const siteMeta = {
-  siteTitle: 'FLUXUS LOCUS',
-  siteDesc: '理学療法士　行之内真人の整体 FLUXUS LOCUS(フラクサス ローカス)',
+  siteTitle: 'FLUXUS LOCUS(フラクサス ローカス)',
+  siteDesc:
+    '横浜・桜木町徒歩5分 理学療法士　行之内真人の整体 FLUXUS LOCUS(フラクサス ローカス)',
   siteUrl: 'https://fluxus-locus.link/',
   siteLang: 'ja',
   siteLocale: 'ja_JP',
