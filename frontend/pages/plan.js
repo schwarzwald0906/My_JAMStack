@@ -1,12 +1,13 @@
 import React from 'react'
+import Link from 'next/link'
 import Container from 'components/container'
 import OverviewTable from 'components/oraganism/overviewTable'
 import utilStyles from 'styles/utils.module.css'
+import styles from 'styles/plan.module.css'
 
 import basicPlan from 'public/images/plan/basicPlan.jpg'
 import trainingPlan from 'public/images/plan/trainingPlan.jpg'
 import beautyPlan from 'public/images/plan/beautyPlan.jpg'
-import innerPlan from 'public/images/plan/innerPlan.jpg'
 import PlanCard from 'components/oraganism/planCard'
 import Meta from 'components/templates/meta'
 
@@ -52,8 +53,7 @@ export default function Plan() {
             プラン一覧
           </h2>
           <p style={{ padding: '10px 0px' }}>
-            ※初回のみ、＋30分カウンセリングのお時間をいただいてます。
-            ※各プラン、お得な回数券もあります。詳しくは施術院まで。
+            初回のみ＋30分カウンセリングのお時間をいただいてます。
           </p>
           <PlanCard
             imageSrc={basicPlan}
@@ -87,25 +87,14 @@ export default function Plan() {
               '深部筋膜までケア、90分で内側からスリムに！全身のリンパケア・インナーマッスルトレーニング・痛くない小顔ケアが受けられる特別なアプローチエステ。自分の潜在能力を引き出す施術で。※着替え不要です。',
             ]}
           />
-          <div style={{ padding: '10px 0px' }} />
-          <PlanCard
-            imageSrc={innerPlan}
-            imageAlt="innerPlan"
-            title="インナーマッスル活性化プラン"
-            firstPlan="25回　450,000円"
-            standardPlan="50回　700,000円"
-            content={[
-              '通常のリハビリ＆トレーニングに加え、',
-              <br />,
-              '1.全身の評価を動画でお渡し',
-              <br />,
-              '2.個別トレーニング指導動画 5本共有 ',
-              <br />,
-              '3.FaceBookグループへご招待。質問にご回答します。',
-              <br />,
-              '理想の体の動きを実現できます。',
-            ]}
-          />
+          <div className={styles.buttons}>
+            <Link legacyBehavior href="/blog/coupon">
+              <a className={styles.button}>回数券</a>
+            </Link>
+            <Link legacyBehavior href="/blog/privilege">
+              <a className={styles.button}>紹介特典</a>
+            </Link>
+          </div>
         </Container>
       </div>
       <div style={{ backgroundColor: 'var(--light-pink)' }}>

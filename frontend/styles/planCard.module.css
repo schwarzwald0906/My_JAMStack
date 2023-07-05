@@ -9,7 +9,7 @@
 @media (max-width: 768px) {
   .smahoWrapper {
     padding: var(--space-xs) 0;
-    width: 92%;
+    width: 98%;
     margin: 0 auto;
     align-items: center;
     /* text-align: center; */
