@@ -16,6 +16,7 @@ import TopCard from 'components/oraganism/topCard'
 import TopPageFigure from 'components/oraganism/topPageFigure'
 import ImageGrid from 'components/molecules/imageGrid'
 import Meta from 'components/templates/meta'
+import Profile from 'components/atom/profile'
 
 export default function Home() {
   return (
@@ -129,6 +130,7 @@ export default function Home() {
           <div />
         </Container>
       </div>
+      <Profile />
       <div style={{ backgroundColor: 'var(--light-gray)' }}>
         <Container>
           <h3 className={utilStyles.center}>施術の流れ</h3>
@@ -158,16 +160,14 @@ export default function Home() {
                 title="今後の説明（希望者のみ）"
                 content="身体に起きている問題を解決するためには他にどこのアプローチが 必要か、どのくらい期間がかかるかの計画を希望者にのみ説明します。 "
               />
-              {/* <h3 className={utilStyles.center}>ご予約はこちらから</h3>
-            <h4>
-              {[
-                'リンク先からWEB予約をお願いします。',
-                <br />,
-                '予約後、仮予約のメールを折り返し送ります。',
-                <br />,
-                'その後、こちらで日程を確認し、本予約のメールをお送りします。',
-              ]}
-            </h4> */}
+              <div className={styles.buttons}>
+                <a
+                  className={styles.button}
+                  href="https://fluxus-locus.net/pcreserve.php"
+                >
+                  WEB予約
+                </a>
+              </div>
             </div>
           </PostBody>
         </Container>
