@@ -11,7 +11,7 @@ export default function OverviewTable() {
           </tr>
           <tr>
             <th>営業時間 </th>
-            <td>9：30 - 20：00</td>
+            <td>9:30 - 20:00</td>
           </tr>
           <tr>
             <th>定休日</th>
@@ -23,7 +23,7 @@ export default function OverviewTable() {
           </tr>
           <tr>
             <th>最寄り駅</th>
-            <td>京浜急行線桜木町駅南口</td>
+            <td>京浜東北線 桜木町駅 ／ みなとみらい線 馬車道駅</td>
           </tr>
           <tr>
             <th>住所</th>

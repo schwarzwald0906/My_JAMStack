@@ -32,6 +32,20 @@
   text-align: center;
 }
 
+/* 新しいスタイル */
+.underline {
+  text-decoration: underline;
+}
+
+.highlight {
+  color: var(--dark-yellow);
+}
+
+.largerText {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 /* デスクトップ用のスタイル */
 @media (min-width: 768px) {
   .hero {
