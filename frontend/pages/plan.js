@@ -1,15 +1,14 @@
-import React from 'react'
-import Link from 'next/link'
 import Container from 'components/container'
 import OverviewTable from 'components/oraganism/overviewTable'
-import utilStyles from 'styles/utils.module.css'
+import Link from 'next/link'
 import styles from 'styles/plan.module.css'
+import utilStyles from 'styles/utils.module.css'
 
-import basicPlan from 'public/images/plan/basicPlan.jpg'
-import trainingPlan from 'public/images/plan/trainingPlan.jpg'
-import beautyPlan from 'public/images/plan/beautyPlan.jpg'
 import PlanCard from 'components/oraganism/planCard'
 import Meta from 'components/templates/meta'
+import basicPlan from 'public/images/plan/basicPlan.jpg'
+import beautyPlan from 'public/images/plan/beautyPlan.jpg'
+import trainingPlan from 'public/images/plan/trainingPlan.jpg'
 
 export default function Plan() {
   return (
@@ -53,16 +52,16 @@ export default function Plan() {
             プラン一覧
           </h2>
           <p style={{ padding: '10px 0px' }}>
-            初回のみ＋30分カウンセリングのお時間をいただいてます。
+            初回は、施術前に30分カウンセリングのお時間をいただいてます。こちらの料金はかかりません。
           </p>
           <PlanCard
             imageSrc={basicPlan}
             imageAlt="basicPlan"
             title="症状改善プラン"
-            firstPlan="初回 30分 3,800円 / 60分 8,800円"
-            standardPlan="通常 30分 6,000円 / 60分 12,000円"
+            firstPlan="初回 60分 6,000円 / 90分 8,800円"
+            standardPlan="通常 60分 12,000円 / 120分 15,000円"
             content={[
-              '腰痛・肩こり・膝の痛みや変形・変形性股関節症・変形性膝関節症・頚椎症・ムチ打ち・椎間板ヘルニアなど各種脊椎疾患・五十肩・腱鞘炎・半月板損傷・頭痛（片頭痛や緊張性頭痛）・ 各関節の靭帯・損傷ネンザ・外反母趾・骨折後の後遺症・神経痛など様々な治療実績あり',
+              '腰痛・肩こり・膝の痛みや変形・変形性股関節症・変形性膝関節症・頚椎症・ムチ打ち・椎間板ヘルニアなど各種脊椎疾患・五十肩・腱鞘炎・半月板損傷・頭痛（片頭痛や緊張性頭痛）・ 各関節の靭帯・損傷ネンザ・外反母趾・骨折後の後遺症・神経痛など、様々な治療実績があります。',
             ]}
           />
           <div style={{ padding: '10px 0px' }} />
@@ -70,8 +69,8 @@ export default function Plan() {
             imageSrc={trainingPlan}
             imageAlt="trainingPlan"
             title="トレーニングプラン"
-            firstPlan="初回 30分 3,800円 / 60分 8,800円"
-            standardPlan="通常 30分 6,000円 / 60分 12,000円"
+            firstPlan="初回 60分 6,000円 / 90分 8,800円"
+            standardPlan="通常 60分 12,000円 / 120分 15,000円"
             content={[
               'インナーマッスルの身体の使い方で、スポーツ障害を予防するだけでなく、パワー・バランス・スピード・柔軟性を高める身体の土台を作ることができます。',
             ]}
@@ -84,7 +83,7 @@ export default function Plan() {
             firstPlan="通常 90分 18,000円"
             standardPlan=""
             content={[
-              '深部筋膜までケア、90分で内側からスリムに！全身のリンパケア・インナーマッスルトレーニング・痛くない小顔ケアが受けられる特別なアプローチエステ。自分の潜在能力を引き出す施術で。※着替え不要です。',
+              '深部筋膜までケア、90分で内側からスリムに！全身のリンパケア・インナーマッスルトレーニング・痛くない小顔ケアが受けられる特別なアプローチエステ。自分の潜在能力を引き出す施術です。※着替え不要です。',
             ]}
           />
           <div className={styles.buttons}>
