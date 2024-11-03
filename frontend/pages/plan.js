@@ -58,7 +58,7 @@ export default function Plan() {
             imageSrc={basicPlan}
             imageAlt="basicPlan"
             title="症状改善プラン"
-            firstPlan="初回 60分 6,000円 / 90分 8,800円"
+            firstPlan="初回 60分 9,800円 / 90分 12,000円"
             standardPlan="通常 60分 12,000円 / 120分 15,000円"
             content={[
               '腰痛・肩こり・膝の痛みや変形・変形性股関節症・変形性膝関節症・頚椎症・ムチ打ち・椎間板ヘルニアなど各種脊椎疾患・五十肩・腱鞘炎・半月板損傷・頭痛（片頭痛や緊張性頭痛）・ 各関節の靭帯・損傷ネンザ・外反母趾・骨折後の後遺症・神経痛など、様々な治療実績があります。',
@@ -69,7 +69,7 @@ export default function Plan() {
             imageSrc={trainingPlan}
             imageAlt="trainingPlan"
             title="トレーニングプラン"
-            firstPlan="初回 60分 6,000円 / 90分 8,800円"
+            firstPlan="初回 60分 9,800円 / 90分 12,000円"
             standardPlan="通常 60分 12,000円 / 120分 15,000円"
             content={[
               'インナーマッスルの身体の使い方で、スポーツ障害を予防するだけでなく、パワー・バランス・スピード・柔軟性を高める身体の土台を作ることができます。',
